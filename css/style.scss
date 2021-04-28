@@ -184,34 +184,67 @@ select {
   @return $px / $height * 100vh;
 }
 
-$sp: 375px; // スマホ
-$ipad: 768px; // iPad
+// $bpc-min: 1281px; // PC大画面最小
+// $spc-max: 1280px; // PC通常最大
+// $spc-min: 769px; // PC通常最小
+// $ipad-max: 768px; // iPad最大
+// $ipad-min: 376px; // iPad最小
+// $sp-max: 375px; // スマホ最大
+// $sp-min: 0; // スマホ最小
+
+$bpc: 1600px; //PC大画面
 $spc: 1280px; // PC通常
-$bpc: 1600px; // PC大画面
+$ipad: 768px; // iPad
+$sp: 375px; // スマホ
 
 @mixin sp {
-  @media (min-width: ($sp)) {
+  @media screen and (min-width: $sp) {
     @content;
   }
 }
 
 @mixin ipad {
-  @media (min-width: ($ipad)) {
+  @media screen and (min-width: $ipad) {
     @content;
   }
 }
 
 @mixin spc {
-  @media (min-width: ($spc)) {
+  @media screen and (min-width: $spc) {
     @content;
   }
 }
 
 @mixin bpc {
-  @media (min-width: ($bpc)) {
+  @media screen and (min-width: $bpc) {
     @content;
   }
 }
+
+// @mixin bpc {
+//   @media screen and (min-width: $bpc-min) {
+//     @content;
+//   }
+// }
+
+// @mixin spc {
+//   @media screen and (min-width: $spc-min) and (max-width: $spc-max) {
+//     @content;
+//   }
+// }
+
+// @mixin ipad {
+//   @media screen and (min-width: $ipad-min) and (max-width: $ipad-max) {
+//     @content;
+//   }
+// }
+
+// @mixin sp {
+//   @media screen and (min-width: $sp-min) and (max-width: $sp-max) {
+//     @content;
+//   }
+// }
+
 
 $navyBlue: #1B224C;
 $yellowOrange: #F5A623;
@@ -222,11 +255,12 @@ $white: #FFFFFF;
 html {
   font-size: 62.5%;
   /* -> 10px; */
+  overflow: hidden;
 }
 
 body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  ;
+  overflow: hidden;
 }
 
 h1 {
@@ -282,13 +316,6 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: 100%;
-
-  @include sp {
-    width: vw(1280, 900);
-  }
-
-  @include bpc {
-    max-width: 1600px;
-  }
+  width: vw(1280, 900);
+  max-width: 1600px;
 }

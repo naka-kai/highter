@@ -4,70 +4,177 @@
 
 .header {
   display: flex;
-  height: 8rem;
-  width: 100vw;
-  background-color: $white;
+  height: 5rem;
+  max-width: 100%;
+
+  @include ipad {
+    height: 8rem;
+  }
+
 }
 
+
 .header_logo {
+  margin: auto 0;
+  margin-left: .5rem;
+
+  @include ipad {
+    margin-left: 1.5rem;
+  }
+
   a {
     img {
       width: 13.6rem;
       height: 2.7rem;
+
+      @include spc {
+        width: 10rem;
+        height: auto;
+      }
     }
   }
 }
 
 .header_nav {
+  margin-left: auto;
   display: flex;
-  width: 100%;
-}
+  align-items: center;
 
-.ham {
-  display: none;
+  @include spc {
 
-  a {
-    .ham-line {}
-
-    .ham-line1 {}
-
-    .ham-line2 {}
-
-    .ham-line3 {}
+    width: 100%;
+    align-items: center;
+    margin-left: .2rem;
   }
 }
 
+.ham {
+  width: 4em;
+  height: 4em;
+  cursor: pointer;
+  position: relative;
+
+  @include spc {
+    display: none;
+  }
+}
+
+.ham-line {
+  position: absolute;
+  left: 1em;
+  width: 2em;
+  height: 0.2em;
+  background-color: $navyBlue;
+  transition: all 0.3s;
+}
+
+.ham-line1 {
+  top: 1em;
+}
+
+.ham-line1.open {
+  transform: rotate(45deg);
+  top: 2em;
+}
+
+.ham-line2 {
+  top: 1.8em;
+}
+
+.ham-line2.open {
+  width: 0;
+}
+
+.ham-line3 {
+  top: 2.6em;
+}
+
+.ham-line3.open {
+  transform: rotate(-45deg);
+  top: 2em;
+}
+
+
 .header_list {
-  display: flex;
+
+  @include spc {
+    display: flex;
+  }
 }
 
 .header_list-item {
-  a {}
+  display: none;
+
+  a {
+    color: $navyBlue;
+  }
+
+  @include spc {
+    display: block;
+    margin-left: 2.8rem;
+  }
 }
 
 .header_right {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  @include spc {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
-.tel-box {}
+.tel-box {
 
-.tel-hour {}
+  @include spc {
+    margin-right: 1.4rem;
+  }
+}
+
+.tel-hour {
+  color: $navyBlue;
+}
 
 .tel-number {
-  a {}
-}
-
-.header-btn {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1.7;
+  a {
+    color: $navyBlue;
+  }
 }
 
 .square-request-btn {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  height: 5rem;
+  margin-right: 1rem;
+  width: 14rem;
+  border-radius: .5rem;
   background-color: $yellowOrange;
+  width: 10rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+
+  @include spc {
+    display: flex;
+  }
 }
 
 .contact-btn {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7;
+  height: 5rem;
+  width: 13.7rem;
+  border-radius: .5rem;
+  margin-right: 1rem;
   background-color: $navyBlue;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+
+  @include spc {
+    display: flex;
+  }
 }

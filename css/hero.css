@@ -234,71 +234,8 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: 100%;
-}
-
-@media (min-width: 375px) {
-  .container {
-    width: 70.3125vw;
-  }
-}
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1600px;
-  }
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 8rem;
-  width: 100vw;
-  background-color: $white;
-}
-
-.header_logo a img {
-  width: 13.6rem;
-  height: 2.7rem;
-}
-
-.header_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.ham {
-  display: none;
-}
-
-.header_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-.header-btn {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1.7;
-}
-
-.square-request-btn {
-  background-color: #F5A623;
-}
-
-.contact-btn {
-  background-color: #1B224C;
+  width: 70.3125vw;
+  max-width: 1600px;
 }
 
 .hero {

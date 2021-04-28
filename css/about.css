@@ -234,134 +234,8 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: 100%;
-}
-
-@media (min-width: 375px) {
-  .container {
-    width: 70.3125vw;
-  }
-}
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1600px;
-  }
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 8rem;
-  width: 100vw;
-  background-color: #FFFFFF;
-}
-
-.header_logo a img {
-  width: 13.6rem;
-  height: 2.7rem;
-}
-
-.header_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.ham {
-  display: none;
-}
-
-.header_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-.header-btn {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1.7;
-}
-
-.square-request-btn {
-  background-color: #F5A623;
-}
-
-.contact-btn {
-  background-color: #1B224C;
-}
-
-.hero {
-  text-align: center;
-}
-
-.hero_bg-img {
-  background-image: url(../img/fv.jpg);
-  content: '';
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 47.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero_text-title {
-  color: #FFFFFF;
-}
-
-.hero_text-text {
-  color: #FFFFFF;
-  margin-top: 2.5rem;
-}
-
-.circle-request-btn {
-  background-color: #F5A623;
-  height: 6rem;
-  width: 26rem;
-  border-radius: 3.1rem;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 5rem;
-  color: #FFFFFF;
-}
-
-.circle-request-btn a {
-  display: block;
-}
-
-.contact-link-text {
-  margin-top: 2.2rem;
-}
-
-.contact-link-text a {
-  color: #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  width: 70.3125vw;
+  max-width: 1600px;
 }
 
 .about {
@@ -403,6 +277,7 @@ ul {
   background-color: #FFFFFF;
   width: 67.8125vw;
   padding: 1.6rem;
+  margin: 0 auto;
   margin-top: 8.3rem;
 }
 

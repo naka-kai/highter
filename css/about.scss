@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import 'hero.scss';
+@import 'style.scss';
 
 .about {
   background-color: $navyBlue;
@@ -19,7 +19,6 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-
 
   :nth-child(1),
   :nth-child(3) {
@@ -40,6 +39,7 @@
   background-color: $white;
   width: vw(1280, 868);
   padding: 1.6rem;
+  margin: 0 auto;
   margin-top: 8.3rem;
 }
 
