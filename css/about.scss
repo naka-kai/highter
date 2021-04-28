@@ -8,7 +8,9 @@
   padding: vh(608, 63) 0 vh(608, 44);
 }
 
-.about_title {}
+.about_title {
+  color: $white;
+}
 
 .about_text-box {}
 
@@ -29,12 +31,32 @@
   }
 }
 
-.about_text-text {}
-
-.about_white-text-box {
-  background-color: #fff;
+.about_text-text {
+  color: $white;
+  margin-top: 6.3rem;
 }
 
-.about_white-text-title {}
+.about_white-text-box-wrapper {
+  background-color: $white;
+  width: vw(1280, 868);
+  padding: 1.6rem;
+  margin-top: 8.3rem;
+}
 
-.about_white-text-text {}
+.about_white-text-box {
+  background-color: $white;
+  width: vw(1280, 868);
+  border: 5px solid $navyBlue;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 2rem 0;
+}
+
+.about_white-text-title {
+  color: $navyBlue;
+}
+
+.about_white-text-text {
+  color: $navyBlue;
+  margin-top: 3.5rem;
+}

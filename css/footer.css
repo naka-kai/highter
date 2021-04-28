@@ -255,7 +255,7 @@ ul {
   display: flex;
   height: 8rem;
   width: 100vw;
-  background-color: pink;
+  background-color: $white;
 }
 
 .header_logo a img {
@@ -323,14 +323,55 @@ ul {
           align-items: center;
 }
 
+.hero_text-title {
+  color: #FFFFFF;
+}
+
+.hero_text-text {
+  color: #FFFFFF;
+  margin-top: 2.5rem;
+}
+
 .circle-request-btn {
   background-color: #F5A623;
+  height: 6rem;
+  width: 26rem;
+  border-radius: 3.1rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+  color: #FFFFFF;
+}
+
+.circle-request-btn a {
+  display: block;
+}
+
+.contact-link-text {
+  margin-top: 2.2rem;
+}
+
+.contact-link-text a {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .about {
   background-color: #1B224C;
   text-align: center;
   padding: 10.36184vh 0 7.23684vh;
+}
+
+.about_title {
+  color: #FFFFFF;
 }
 
 .about_text-box-inner {
@@ -353,8 +394,29 @@ ul {
   width: 18rem;
 }
 
+.about_text-text {
+  color: #FFFFFF;
+}
+
+.about_white-text-box-wrapper {
+  background-color: #FFFFFF;
+  width: 67.8125vw;
+  padding: 1.6rem;
+}
+
 .about_white-text-box {
-  background-color: #fff;
+  background-color: #FFFFFF;
+  width: 67.8125vw;
+  border: 5px solid #1B224C;
+  margin: 0 auto;
+}
+
+.about_white-text-title {
+  color: #1B224C;
+}
+
+.about_white-text-text {
+  color: #1B224C;
 }
 
 .feature {
@@ -428,7 +490,7 @@ ul {
 
 .example_card-item-img {
   width: 100%;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .example_card-item-text-top {
@@ -443,16 +505,16 @@ ul {
 
 .example_card-item-profession {
   width: calc(96% / 2);
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .example_card-item-name {
   width: calc(96% / 2);
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .example_card-item-period {
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin-top: 1rem;
 }
 
@@ -633,6 +695,15 @@ ul {
 .contact_circle-request-btn {
   height: 5rem;
   width: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact_tel-contact-box {
@@ -642,6 +713,9 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 8rem;
 }
 

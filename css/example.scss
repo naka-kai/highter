@@ -28,7 +28,7 @@
 
 .example_card-item-img {
   width: 100%;
-  background-color: #fff;
+  background-color: $white;
 
   img {}
 }
@@ -41,15 +41,15 @@
 
 .example_card-item-profession {
   width: calc(96% / 2);
-  background-color: #fff;
+  background-color: $white;
 }
 
 .example_card-item-name {
   width: calc(96% / 2);
-  background-color: #fff;
+  background-color: $white;
 }
 
 .example_card-item-period {
-  background-color: #fff;
+  background-color: $white;
   margin-top: 1rem;
 }

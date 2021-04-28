@@ -21,15 +21,37 @@
 
 .hero_text-box {}
 
-.hero_text-title {}
+.hero_text-title {
+  color: $white;
+}
 
-.hero_text-text {}
+.hero_text-text {
+  color: $white;
+  margin-top: 2.5rem;
+}
 
 .circle-request-btn {
   background-color: $yellowOrange;
-  a {}
+  height: 6rem;
+  width: 26rem;
+  border-radius: 3.1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  color: $white;
+
+  a {
+    display: block;
+  }
 }
 
 .contact-link-text {
-  a {}
+  margin-top: 2.2rem;
+
+  a {
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
 }
