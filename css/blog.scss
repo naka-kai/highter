@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import 'faq.scss';
+
+.blog-news {
+
+  padding: vh(670,90) 0 vh(670, 119);
+}
+
+.blog-news-container {
+  display: flex;
+}
+
+.blog {
+  width: vw(1280, 430);
+}
+
+.blog_title {}
+
+.blog_articles {}
+
+.blog_article {
+  display: flex;
+  padding-top: vh(670, 30);
+}
+
+.blog_article-img-box {
+  position: relative;
+
+  img {
+    width: vw(1280, 150);
+  }
+}
+
+.blog_category {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blog_article-text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog_article-title {
+  flex-grow: 1;
+}
+
+.blog_article-date {}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import 'header.scss';
+
+.hero {
+  text-align: center;
+}
+
+.hero_bg-img {
+
+  background-image: url(../img/fv.jpg);
+  content: '';
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 47.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_text-box {}
+
+.hero_text-title {}
+
+.hero_text-text {}
+
+.circle-request-btn {
+  background-color: $yellowOrange;
+  a {}
+}
+
+.contact-link-text {
+  a {}
+}

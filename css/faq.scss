@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@import 'flow.scss';
+
+.faq {
+  padding-top: vh(509, 75);
+}
+
+.faq_title {}
+
+.faq_accordion-container {
+  width: 30rem;
+}
+
+.faq_accordion-title {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 2.5rem;
+    width: 1.5rem;
+    height: 2px;
+    transform: rotate(90deg);
+    background-color: #000;
+    transition: all .3s ease-in-out;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 2.5rem;
+    width: 1.5rem;
+    height: 2px;
+    background-color: #000;
+    transition: all 0s ease-in-out;
+  }
+}
+
+.faq_accordion-title.open {
+  &::before {
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    opacity: 0;
+  }
+}
+
+.faq_accordion-toggle {
+  // display: none;
+}
+
+.faq_accordion-content {}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@import 'contact.scss';
+
+.footer {}
+
+.footer_top-wrapper {
+  background-color: $navyBlue;
+  height: 22.964rem;
+}
+
+.footer_top {
+  display: flex;
+}
+
+.footer_top-left {}
+
+.footer_top-left-list {
+  display: flex;
+}
+
+.footer_top-left-list-item {}
+
+.footer_top-right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.footer_logo {
+
+  a {
+
+    img {}
+  }
+}
+
+.footer_top-right-tel-box {}
+
+.footer_top-right_tel-contact-number {}
+
+.footer_top-right_tel-contact-hour {}
+
+.footer_bottom {
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer_bottom-copy {
+  margin-left: auto;
+}

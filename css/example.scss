@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import 'feature.scss';
+
+.example {
+  background-color: $navyBlue;
+  height: auto;
+  padding: vh(608, 58) 0;
+}
+
+.example_title {
+  text-align: center;
+}
+
+.example_card-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example_card-list {
+  width: calc(96% / 3);
+  text-align: center;
+}
+
+.example_card-link {}
+
+.example_card-item-title {}
+
+.example_card-item-img {
+  width: 100%;
+  background-color: #fff;
+
+  img {}
+}
+
+.example_card-item-text-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.example_card-item-profession {
+  width: calc(96% / 2);
+  background-color: #fff;
+}
+
+.example_card-item-name {
+  width: calc(96% / 2);
+  background-color: #fff;
+}
+
+.example_card-item-period {
+  background-color: #fff;
+  margin-top: 1rem;
+}

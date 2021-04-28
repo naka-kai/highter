@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import 'hero.scss';
+
+.about {
+  background-color: $navyBlue;
+  text-align: center;
+  padding: vh(608, 63) 0 vh(608, 44);
+}
+
+.about_title {}
+
+.about_text-box {}
+
+.about_text-box-inner {
+  width: vw(1280, 555);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+
+  :nth-child(1),
+  :nth-child(3) {
+    width: 14.4rem;
+  }
+
+  :nth-child(2) {
+    width: 18rem;
+  }
+}
+
+.about_text-text {}
+
+.about_white-text-box {
+  background-color: #fff;
+}
+
+.about_white-text-title {}
+
+.about_white-text-text {}

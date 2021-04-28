@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import 'blog.scss';
+
+.news {
+  width: vw(1280, 430);
+  margin-left: auto;
+}
+
+.news_title {}
+
+.news_articles {}
+
+.news_article {
+  padding-top: vh(670, 19);
+}
+
+.news_article-date {}
+
+.news_article-title {
+  padding: vh(670, 15) 0 vh(670, 43);
+}

@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+@import 'style.scss';
+
+.header {
+  display: flex;
+  height: 8rem;
+  width: 100vw;
+}
+
+.header_logo {
+  a {
+    img {
+      width: 13.6rem;
+      height: 2.7rem;
+    }
+  }
+}
+
+.header_nav {
+  display: flex;
+  width: 100%;
+}
+
+.ham {
+  display: none;
+
+  a {
+    .ham-line {}
+
+    .ham-line1 {}
+
+    .ham-line2 {}
+
+    .ham-line3 {}
+  }
+}
+
+.header_list {
+  display: flex;
+}
+
+.header_list-item {
+  a {}
+}
+
+.header_right {
+  display: flex;
+  margin-left: auto;
+}
+
+.tel-box {}
+
+.tel-hour {}
+
+.tel-number {
+  a {}
+}
+
+.header-btn {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+.square-request-btn {
+  background-color: $yellowOrange;
+}
+
+.contact-btn {
+  background-color: $navyBlue;
+}

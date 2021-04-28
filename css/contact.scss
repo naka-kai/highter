@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@import 'news.scss';
+
+.contact {
+  text-align: center;
+}
+
+.contact_bg-img {
+  background-image: url(../img/cta.jpg);
+  content: '';
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_text-box {}
+
+.contact_text-title {}
+
+.contact_circle-request-btn {
+  height: 5rem;
+  width: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_circle-request-btn-text {}
+
+.contact_contact-link-text {}
+
+.contact_tel-contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+
+.contact_tel-contact-title {}
+
+.contact_tel-contact-number {}
+
+.contact_tel-contact-hour {}

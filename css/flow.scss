@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+@import 'example.scss';
+
+
+.flow {
+  padding-top: vh(425, 58);
+}
+
+.flow_title {}
+
+.flow_list {
+  background-color: $moreThinGray;
+}
+
+.flow_list-item {}
+
+.flow_list-item-number-box {
+  display: inline-block;
+  background-color: $yellowOrange;
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.flow_list-item-number {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flow_list-item-text-box {
+  display: inline-block;
+}
+
+.flow_list-item-title {
+  display: inline-block;
+  border-right: 1px solid #C3C3C3;
+}
+
+.flow_list-item-text {
+  display: inline-block;
+}
