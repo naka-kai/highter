@@ -209,10 +209,16 @@ h2 {
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.7;
   color: #1B224C;
+}
+
+@media screen and (min-width: 1280px) {
+  h3 {
+    font-size: 3.2rem;
+  }
 }
 
 h4 {

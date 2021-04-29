@@ -1,10 +1,15 @@
 @charset "utf-8";
 
-// @import 'style.scss';
+@import 'style.scss';
 
 .news {
-  width: vw(1280, 430);
-  margin-left: auto;
+  margin-top: 3rem;
+
+  @include spc {
+    width: vw(1280, 430);
+    margin-left: auto;
+    margin-top: 0;
+  }
 }
 
 .news_title {}

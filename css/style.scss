@@ -252,10 +252,14 @@ h2 {
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.7;
   color: $navyBlue;
+
+  @include spc {
+    font-size: 3.2rem;
+  }
 }
 
 h4 {
