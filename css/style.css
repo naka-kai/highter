@@ -287,7 +287,13 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: 70.3125vw;
   max-width: 1600px;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70.3125vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -320,6 +320,10 @@ ul {
 
 .container {
   margin: 0 auto;
-  width: vw(1280, 900);
   max-width: 1600px;
+  width: 90%;
+
+  @include ipad {
+    width: vw(1280, 900);
+  }
 }

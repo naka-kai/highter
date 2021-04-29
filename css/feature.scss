@@ -93,15 +93,44 @@
   width: 100%;
   height: auto;
   text-align: center;
-  padding: 6rem 0 5.3rem;
+  margin-top: 3rem;
+  padding: 3rem 0;
+
+
+  @include spc {
+    padding: 6rem 0 5.3rem;
+    margin-top: 9.3rem;
+
+  }
 }
 
-.feature_img-box-title {}
+.feature_img-box-title {
+  color: $white;
+}
 
 .feature_img-box-link {
-  margin-top: 2.7rem;
+  margin-top: 2rem;
+
+  @include spc {
+    margin-top: 2.7rem;
+  }
 }
 
 .feature_img-box-text {
   font-weight: bold;
+
+  a {
+    color: $white;
+    border: 1px solid $white;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    line-height: 1.7;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    @include spc {
+      font-size: 1.6rem;
+      padding: 1.5rem 4.5rem;
+    }
+  }
 }
