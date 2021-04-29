@@ -10,14 +10,7 @@
 
 .about_title {
   color: $white;
-  font-size: 3rem;
-
-  @include spc {
-    font-size: 3.6rem;
-  }
 }
-
-.about_text-box {}
 
 .about_text-box-inner {
   justify-content: space-between;

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import 'style.scss';
+// @import 'style.scss';
 
 
 .flow {
@@ -10,14 +10,14 @@
 .flow_title {}
 
 .flow_list {
-  background-color: $moreThinGray;
+  // background-color: $moreThinGray;
 }
 
 .flow_list-item {}
 
 .flow_list-item-number-box {
   display: inline-block;
-  background-color: $yellowOrange;
+  // background-color: $yellowOrange;
   width: 6.4rem;
   height: 6.4rem;
 }

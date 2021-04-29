@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-@import 'style.scss';
+// @import 'style.scss';
 
 .example {
-  background-color: $navyBlue;
+  // background-color: $navyBlue;
   height: auto;
   padding: vh(608, 58) 0;
 }
@@ -27,13 +27,11 @@
 .example_card-item-title {
   font-weight: bold;
   line-height: 1.8;
-
-  @include spc {}
 }
 
 .example_card-item-img {
   width: 100%;
-  background-color: $white;
+  // background-color: $white;
 
   img {}
 }
@@ -46,18 +44,16 @@
 
 .example_card-item-profession {
   width: calc(96% / 2);
-  background-color: $white;
+  // background-color: $white;
   line-height: 1.8;
-
-  @include spc {}
 }
 
 .example_card-item-name {
   width: calc(96% / 2);
-  background-color: $white;
+  // background-color: $white;
 }
 
 .example_card-item-period {
-  background-color: $white;
+  // background-color: $white;
   margin-top: 1rem;
 }
