@@ -10,9 +10,6 @@
   text-align: center;
 }
 
-.faq_accordion-container {
-}
-
 .faq_accordion-title {
   position: relative;
   height: 6.5rem;
@@ -53,8 +50,6 @@
     opacity: 0;
   }
 }
-
-.faq_accordion-toggle {}
 
 .faq_accordion-content {
   background-color: $moreThinGray;

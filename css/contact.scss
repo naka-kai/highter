@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-// @import 'style.scss';
+@import 'style.scss';
 
 .contact {
   text-align: center;
@@ -18,37 +18,63 @@
   align-items: center;
 }
 
-.contact_text-box {}
-
-.contact_text-title {}
+.contact_text-title {
+  color: $white;
+}
 
 .contact_circle-request-btn {
-  height: 5rem;
-  width: 28rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 4rem;
+  width: 20rem;
+
+  @include spc {
+    height: 5rem;
+    width: 28rem;
+  }
 
   a {
     font-weight: bold;
   }
 }
 
-.contact_circle-request-btn-text {}
-
-.contact_contact-link-text {}
+.contact_circle-request-btn-text {
+  color: $white;
+}
 
 .contact_tel-contact-box {
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+
+  @include spc {
+    height: 8rem;
+    display: flex;
+  }
 }
 
 .contact_tel-contact-title {
   font-weight: bold;
+  margin-top: 2rem;
+
+  @include spc {
+    margin-top: 0;
+  }
 }
 
-.contact_tel-contact-number {}
+.contact_tel-contact-number {
+  margin-top: 1rem;
 
-.contact_tel-contact-hour {}
+  @include spc {
+    margin-top: 0;
+  }
+
+  a {
+    color: $navyBlue;
+  }
+}
+
+.contact_tel-contact-hour {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
