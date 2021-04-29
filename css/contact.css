@@ -296,6 +296,10 @@ ul {
           align-items: center;
 }
 
+.contact_circle-request-btn a {
+  font-weight: bold;
+}
+
 .contact_tel-contact-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,5 +311,9 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   height: 8rem;
+}
+
+.contact_tel-contact-title {
+  font-weight: bold;
 }
 /*# sourceMappingURL=contact.css.map */

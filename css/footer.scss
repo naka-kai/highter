@@ -19,7 +19,12 @@
   display: flex;
 }
 
-.footer_top-left-list-item {}
+.footer_top-left-list-item {
+
+  a {
+    font-weight: bold;
+  }
+}
 
 .footer_top-right {
   margin-left: auto;
@@ -36,7 +41,12 @@
 
 .footer_top-right-tel-box {}
 
-.footer_top-right_tel-contact-number {}
+.footer_top-right_tel-contact-number {
+
+  a {
+    font-weight: bold;
+  }
+}
 
 .footer_top-right_tel-contact-hour {}
 
@@ -48,4 +58,5 @@
 
 .footer_bottom-copy {
   margin-left: auto;
+  font-weight: bold;
 }

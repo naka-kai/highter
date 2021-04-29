@@ -24,7 +24,12 @@
 
 .example_card-link {}
 
-.example_card-item-title {}
+.example_card-item-title {
+  font-weight: bold;
+  line-height: 1.8;
+
+  @include spc {}
+}
 
 .example_card-item-img {
   width: 100%;
@@ -42,6 +47,9 @@
 .example_card-item-profession {
   width: calc(96% / 2);
   background-color: $white;
+  line-height: 1.8;
+
+  @include spc {}
 }
 
 .example_card-item-name {

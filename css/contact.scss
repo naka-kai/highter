@@ -28,6 +28,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  a {
+    font-weight: bold;
+  }
 }
 
 .contact_circle-request-btn-text {}
@@ -41,8 +45,11 @@
   height: 8rem;
 }
 
-.contact_tel-contact-title {}
+.contact_tel-contact-title {
+  font-weight: bold;
+}
 
-.contact_tel-contact-number {}
+.contact_tel-contact-number {
+}
 
 .contact_tel-contact-hour {}

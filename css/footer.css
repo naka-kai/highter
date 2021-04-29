@@ -277,9 +277,17 @@ ul {
   display: flex;
 }
 
+.footer_top-left-list-item a {
+  font-weight: bold;
+}
+
 .footer_top-right {
   margin-left: auto;
   text-align: right;
+}
+
+.footer_top-right_tel-contact-number a {
+  font-weight: bold;
 }
 
 .footer_bottom {
@@ -294,5 +302,6 @@ ul {
 
 .footer_bottom-copy {
   margin-left: auto;
+  font-weight: bold;
 }
 /*# sourceMappingURL=footer.css.map */

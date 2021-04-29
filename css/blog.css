@@ -293,6 +293,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
+  line-height: 1;
 }
 
 .blog_article-text-box {
@@ -309,5 +310,6 @@ ul {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-weight: bold;
 }
 /*# sourceMappingURL=blog.css.map */
