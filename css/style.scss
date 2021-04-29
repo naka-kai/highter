@@ -314,6 +314,22 @@ ul {
   list-style: none;
 }
 
+.smallDone {
+  display: block;
+
+  @include spc {
+    display: none;
+  }
+}
+
+.smallNone {
+  display: none;
+
+  @include spc {
+    display: block;
+  }
+}
+
 .container {
   margin: 0 auto;
   width: vw(1280, 900);

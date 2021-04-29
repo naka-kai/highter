@@ -234,6 +234,26 @@ ul {
   list-style: none;
 }
 
+.smallDone {
+  display: block;
+}
+
+@media screen and (min-width: 1280px) {
+  .smallDone {
+    display: none;
+  }
+}
+
+.smallNone {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .smallNone {
+    display: block;
+  }
+}
+
 .container {
   margin: 0 auto;
   width: 70.3125vw;

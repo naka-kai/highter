@@ -4,15 +4,14 @@
 
 .header {
   display: flex;
+  align-items: center;
   height: 5rem;
   max-width: 100%;
 
   @include ipad {
     height: 8rem;
   }
-
 }
-
 
 .header_logo {
   margin: auto 0;
@@ -24,12 +23,12 @@
 
   a {
     img {
-      width: 13.6rem;
-      height: 2.7rem;
+      width: 10rem;
+      height: auto;
 
       @include spc {
-        width: 10rem;
-        height: auto;
+        width: 13.6rem;
+        height: 2.7rem;
       }
     }
   }
@@ -105,22 +104,24 @@
 .header_list-item {
   display: none;
 
-  a {
-    color: $navyBlue;
-  }
-
   @include spc {
     display: block;
     margin-left: 2.8rem;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+
+  a {
+    color: $navyBlue;
   }
 }
 
 .header_right {
   display: none;
+  margin-left: auto;
 
   @include spc {
     display: flex;
-    margin-left: auto;
   }
 }
 
@@ -138,12 +139,17 @@
 .tel-number {
   a {
     color: $navyBlue;
+
+    @include spc {
+      font-weight: bold;
+    }
   }
 }
 
 .square-request-btn {
   font-size: 1.4rem;
   line-height: 1.7;
+  font-weight: bold;
   height: 5rem;
   margin-right: 1rem;
   width: 14rem;
