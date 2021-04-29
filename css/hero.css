@@ -175,12 +175,10 @@ select {
 html {
   font-size: 62.5%;
   /* -> 10px; */
-  overflow: hidden;
 }
 
 body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  overflow: hidden;
 }
 
 h1 {
@@ -289,7 +287,7 @@ ul {
 }
 
 .hero_text-box {
-  margin: 0 1rem;
+  width: 80%;
 }
 
 @media screen and (min-width: 1280px) {

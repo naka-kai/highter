@@ -175,12 +175,10 @@ select {
 html {
   font-size: 62.5%;
   /* -> 10px; */
-  overflow: hidden;
 }
 
 body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  overflow: hidden;
 }
 
 h1 {
@@ -313,9 +311,6 @@ ul {
 @media screen and (min-width: 1280px) {
   .header_nav {
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-left: .2rem;
   }
 }
