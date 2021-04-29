@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-// @import 'style.scss';
+@import 'style.scss';
 
 .faq {
   padding-top: vh(509, 75);
@@ -9,11 +9,14 @@
 .faq_title {}
 
 .faq_accordion-container {
-  width: 30rem;
 }
 
 .faq_accordion-title {
   position: relative;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem 0 0;
 
   &::before {
     content: '';
@@ -49,8 +52,16 @@
   }
 }
 
-.faq_accordion-toggle {
-  // display: none;
+.faq_accordion-toggle {}
+
+.faq_accordion-content {
+  background-color: $moreThinGray;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
 }
 
-.faq_accordion-content {}
+hr {
+  border-color: $navyBlue;
+}

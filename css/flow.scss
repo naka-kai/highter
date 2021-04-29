@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-// @import 'style.scss';
+@import 'style.scss';
 
 
 .flow {
@@ -9,17 +9,23 @@
 
 .flow_title {}
 
-.flow_list {
-  // background-color: $moreThinGray;
-}
+.flow_list {}
 
-.flow_list-item {}
+.flow_list-item {
+  margin-top: .8rem;
+  background-color: $moreThinGray;
+}
 
 .flow_list-item-number-box {
   display: inline-block;
-  // background-color: $yellowOrange;
-  width: 6.4rem;
-  height: 6.4rem;
+  background-color: $yellowOrange;
+  width: 4rem;
+  height: 4rem;
+
+  @include spc {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
 }
 
 .flow_list-item-number {
@@ -27,9 +33,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.8;
+  font-size: 1.4rem;
+
+  @include spc {
+    font-size: 1.6rem;
+  }
 }
 
 .flow_list-item-text-box {
@@ -39,10 +49,29 @@
 .flow_list-item-title {
   display: inline-block;
   border-right: 1px solid #C3C3C3;
+  line-height: 2;
+  width: 15rem;
+  padding-left: 1rem;
   font-weight: bold;
-  line-height: 2.2;
+  font-size: 1.6rem;
+
+  @include spc {
+    font-size: 1.8rem;
+    line-height: 2.2;
+    width: 21.4rem;
+    padding-left: 2.5rem;
+  }
 }
 
 .flow_list-item-text {
+  line-height: 1;
   display: inline-block;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+
+  @include spc {
+    line-height: 2.2;
+    padding-left: 5.5rem;
+    font-size: 1.6rem;
+  }
 }
