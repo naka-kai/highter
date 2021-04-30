@@ -322,7 +322,6 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   height: 5rem;
-  position: fixed;
   background-color: #FFFFFF;
   width: 100%;
 }
@@ -561,7 +560,7 @@ ul {
 .tel-number a::before {
   content: '';
   display: inline-block;
-  background-image: url(../img/tel29.svg);
+  background-image: url(../../img/tel29.svg);
   background-repeat: no-repeat;
   background-position: center right;
   width: 3rem;

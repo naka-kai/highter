@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import 'style.scss';
+@import '../share_css/style.scss';
 
 .feature {
   padding: vh(608, 60) 0 vh(608, 50);
@@ -29,6 +29,7 @@
 
 .feature_box-img {
   width: 100%;
+
   img {
     width: 100%;
     display: block;
@@ -95,7 +96,7 @@
 }
 
 .feature_img-box {
-  background-image: url(../img/price.jpg);
+  background-image: url(../../img/price.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-@import 'style.scss';
+@import '../share_css/style.scss';
 
 .contact {
   text-align: center;
 }
 
 .contact_bg-img {
-  background-image: url(../img/cta.jpg);
+  background-image: url(../../img/cta.jpg);
   content: '';
   background-position: center center;
   background-repeat: no-repeat;

@@ -1,18 +1,13 @@
 @charset "utf-8";
 
-@import 'style.scss';
+@import '../share_css/style.scss';
 
 .hero {
-  padding-top: 5rem;
   text-align: center;
-
-  @include spc {
-    padding-top: 8rem;
-  }
 }
 
 .hero_bg-img {
-  background-image: url(../img/fv.jpg);
+  background-image: url(../../img/fv.jpg);
   content: '';
   background-position: 80% 50%;
   background-repeat: no-repeat;

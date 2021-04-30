@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import 'style.scss';
+@import '../share_css/style.scss';
 
 .footer_top-wrapper {
   background-color: $navyBlue;
@@ -83,7 +83,7 @@
     &::before {
       content: '';
       display: inline-block;
-      background-image: url(../img/tel16.svg);
+      background-image: url(../../img/tel16.svg);
       background-repeat: no-repeat;
       background-position: center right;
       width: 4rem;

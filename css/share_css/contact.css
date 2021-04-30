@@ -314,24 +314,16 @@ ul {
   }
 }
 
-.hero {
-  padding-top: 5rem;
+.contact {
   text-align: center;
 }
 
-@media screen and (min-width: 1280px) {
-  .hero {
-    padding-top: 8rem;
-  }
-}
-
-.hero_bg-img {
-  background-image: url(../img/fv.jpg);
+.contact_bg-img {
+  background-image: url(../../img/cta.jpg);
   content: '';
-  background-position: 80% 50%;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 47.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,78 +333,97 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 15rem;
 }
 
 @media screen and (min-width: 1280px) {
-  .hero_bg-img {
-    background-position: center center;
+  .contact_bg-img {
+    height: 25.1rem;
   }
 }
 
-.hero_text-box {
-  width: 80%;
-}
-
-.hero_text-title {
+.contact_text-title {
   color: #FFFFFF;
 }
 
-.hero_text-text {
+.contact_circle-request-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  width: 20rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact_circle-request-btn {
+    height: 5rem;
+    width: 28rem;
+  }
+}
+
+.contact_circle-request-btn a {
+  font-weight: bold;
+}
+
+.contact_circle-request-btn-text {
   color: #FFFFFF;
+}
+
+.contact_contact-link-text {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact_tel-contact-box {
+    height: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contact_tel-contact-title {
+  font-weight: bold;
   margin-top: 2rem;
 }
 
 @media screen and (min-width: 1280px) {
-  .hero_text-text {
-    margin-top: 2.5rem;
+  .contact_tel-contact-title {
+    margin-top: 0;
+    margin-right: 2rem;
   }
 }
 
-.circle-request-btn {
-  font-weight: bold;
-  line-height: 1.8;
-  background-color: #F5A623;
-  height: 4rem;
-  width: 20rem;
-  border-radius: 3.1rem;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 3rem;
-  color: #FFFFFF;
+.contact_tel-contact-number {
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 1280px) {
-  .circle-request-btn {
-    height: 6rem;
-    width: 26rem;
-    margin-top: 5rem;
+  .contact_tel-contact-number {
+    margin-top: 0;
+    margin-right: 2rem;
   }
 }
 
-.circle-request-btn a {
-  display: block;
+.contact_tel-contact-number a {
+  color: #1B224C;
 }
 
-.contact-link-text {
-  margin-top: 1.7rem;
+.contact_tel-contact-hour {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
 }
-
-@media screen and (min-width: 1280px) {
-  .contact-link-text {
-    margin-top: 2.2rem;
-  }
-}
-
-.contact-link-text a {
-  color: #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-}
-/*# sourceMappingURL=hero.css.map */
+/*# sourceMappingURL=contact.css.map */

@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-@import 'style.scss';
+@import '../share_css/style.scss';
 
 .header {
   display: flex;
   align-items: center;
   height: 5rem;
-  position: fixed;
+  // position: fixed;
   background-color: $white;
   width: 100%;
 
@@ -219,7 +219,7 @@
     &::before {
       content: '';
       display: inline-block;
-      background-image: url(../img/tel29.svg);
+      background-image: url(../../img/tel29.svg);
       background-repeat: no-repeat;
       background-position: center right;
       width: 3rem;
