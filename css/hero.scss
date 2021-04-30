@@ -3,7 +3,12 @@
 @import 'style.scss';
 
 .hero {
+  padding-top: 5rem;
   text-align: center;
+
+  @include spc {
+    padding-top: 8rem;
+  }
 }
 
 .hero_bg-img {
@@ -24,10 +29,6 @@
 
 .hero_text-box {
   width: 80%;
-
-  @include spc {
-    margin: 0;
-  }
 }
 
 .hero_text-title {

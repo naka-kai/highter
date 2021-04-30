@@ -274,6 +274,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: .8;
+}
+
 ul {
   list-style: none;
 }
@@ -311,7 +315,14 @@ ul {
 }
 
 .hero {
+  padding-top: 5rem;
   text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 8rem;
+  }
 }
 
 .hero_bg-img {
@@ -340,12 +351,6 @@ ul {
 
 .hero_text-box {
   width: 80%;
-}
-
-@media screen and (min-width: 1280px) {
-  .hero_text-box {
-    margin: 0;
-  }
 }
 
 .hero_text-title {

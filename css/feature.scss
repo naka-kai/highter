@@ -19,11 +19,7 @@
 }
 
 .feature_box {
-  margin-top: 3rem;
-
-  @include ipad {
-    margin-top: 5rem;
-  }
+  margin-top: 5rem;
 
   @include spc {
     display: flex;
@@ -32,8 +28,15 @@
 }
 
 .feature_box-img {
+  width: 100%;
   img {
     width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    @include ipad {
+      width: 60%;
+    }
 
     @include spc {
       width: vw(1280, 350);
@@ -42,7 +45,12 @@
 }
 
 .feature_box-text-box {
-  margin-right: auto;
+  text-align: center;
+
+  @include spc {
+    margin-right: auto;
+    text-align: start;
+  }
 }
 
 .feature_box-text-box2 {
@@ -57,9 +65,10 @@
   text-align: center;
   padding: .5rem 0;
   width: 6rem;
-  margin-top: 1rem;
+  margin: 2rem auto 0;
 
   @include spc {
+    margin: 1rem 0 0;
     width: vw(1280, 90);
     margin-top: 0;
   }

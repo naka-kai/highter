@@ -274,6 +274,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: .8;
+}
+
 ul {
   list-style: none;
 }
@@ -320,7 +324,6 @@ ul {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 25.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,6 +333,13 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 15rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact_bg-img {
+    height: 25.1rem;
+  }
 }
 
 .contact_text-title {
@@ -348,6 +358,7 @@ ul {
           align-items: center;
   height: 4rem;
   width: 20rem;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 1280px) {
@@ -363,6 +374,10 @@ ul {
 
 .contact_circle-request-btn-text {
   color: #FFFFFF;
+}
+
+.contact_contact-link-text {
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 1280px) {

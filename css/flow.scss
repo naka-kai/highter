@@ -9,7 +9,14 @@
 
 .flow_list-item {
   margin-top: .8rem;
+  padding-bottom: 1rem;
   background-color: $moreThinGray;
+  display: flex;
+  flex-direction: column;
+
+  @include spc {
+    display: block;
+  }
 }
 
 .flow_list-item-number-box {
@@ -31,10 +38,9 @@
   align-items: center;
   font-weight: bold;
   line-height: 1.8;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 
   @include spc {
-    font-size: 1.6rem;
   }
 }
 
@@ -43,17 +49,15 @@
 }
 
 .flow_list-item-title {
-  display: inline-block;
-  border-right: 1px solid #C3C3C3;
-  line-height: 2;
-  width: 15rem;
   padding-left: 1rem;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  display: block;
+  line-height: 2.2;
 
   @include spc {
-    font-size: 1.8rem;
-    line-height: 2.2;
+    display: inline-block;
+    border-right: 1px solid #C3C3C3;
     width: 21.4rem;
     padding-left: 2.5rem;
   }
@@ -61,12 +65,13 @@
 
 .flow_list-item-text {
   line-height: 1;
-  display: inline-block;
   padding-left: 1rem;
   font-size: 1.4rem;
+  display: block;
 
 
   @include spc {
+    display: inline-block;
     line-height: 2.2;
     padding-left: 5.5rem;
     font-size: 1.6rem;

@@ -12,10 +12,14 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 25.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 15rem;
+
+  @include spc {
+    height: 25.1rem;
+  }
 }
 
 .contact_text-title {
@@ -28,6 +32,7 @@
   align-items: center;
   height: 4rem;
   width: 20rem;
+  margin-top: 1rem;
 
   @include spc {
     height: 5rem;
@@ -41,6 +46,10 @@
 
 .contact_circle-request-btn-text {
   color: $white;
+}
+
+.contact_contact-link-text {
+  margin-top: 1rem;
 }
 
 .contact_tel-contact-box {
