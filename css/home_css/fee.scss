@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@import '../share_css/style.scss';
+
+
+.fee_img-box {
+  background-image: url(../../img/price.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 3rem 0 3rem;
+  padding: 3rem 0;
+
+
+  @include spc {
+    padding: 6rem 0 5.3rem;
+    margin: 4.3rem 0 4rem;
+
+  }
+}
+
+.fee_img-box-title {
+  color: $white;
+}
+
+.fee_img-box-link {
+  margin-top: 2rem;
+
+  @include spc {
+    margin-top: 2.7rem;
+  }
+}
+
+.fee_img-box-text {
+  font-weight: bold;
+
+  a {
+    color: $white;
+    border: 1px solid $white;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    line-height: 1.7;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    @include spc {
+      font-size: 1.6rem;
+      padding: 1.5rem 4.5rem;
+    }
+  }
+}
