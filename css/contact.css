@@ -365,21 +365,18 @@ ul {
   color: #FFFFFF;
 }
 
-.contact_tel-contact-box {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media screen and (min-width: 1280px) {
   .contact_tel-contact-box {
     height: 8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -391,6 +388,7 @@ ul {
 @media screen and (min-width: 1280px) {
   .contact_tel-contact-title {
     margin-top: 0;
+    margin-right: 2rem;
   }
 }
 
@@ -401,6 +399,7 @@ ul {
 @media screen and (min-width: 1280px) {
   .contact_tel-contact-number {
     margin-top: 0;
+    margin-right: 2rem;
   }
 }
 

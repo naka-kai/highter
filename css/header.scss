@@ -6,7 +6,9 @@
   display: flex;
   align-items: center;
   height: 5rem;
-  max-width: 100%;
+  position: fixed;
+  background-color: $white;
+  width: 100%;
 
   @include ipad {
     height: 8rem;
@@ -26,7 +28,7 @@
       width: 10rem;
       height: auto;
 
-      @include spc {
+      @include ipad {
         width: 13.6rem;
         height: 2.7rem;
       }
@@ -40,9 +42,60 @@
   align-items: center;
 
   @include spc {
-
     width: 100%;
-    margin-left: .2rem;
+  }
+}
+
+.header-sp-nav {
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  background-color: $navyBlue;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transform: translate(250px);
+  transition: all .5s;
+}
+
+.header-sp-nav.open {
+  transform: translate(0);
+}
+
+.header-sp-menu {
+  // padding-top: 5rem;
+
+  @include ipad {
+    // padding-top: 8rem;
+  }
+}
+
+.header-sp-menu-list {
+  margin: 5rem 4rem;
+
+  a {
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+.header_sp-btn-box {
+  display: flex;
+}
+
+.header_sp-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 4rem;
+  background-color: $yellowOrange;
+  margin-left: 2rem;
+
+  @include spc {
+    display: none;
   }
 }
 
@@ -51,6 +104,7 @@
   height: 4em;
   cursor: pointer;
   position: relative;
+  z-index: 20;
 
   @include spc {
     display: none;
@@ -64,6 +118,10 @@
   height: 0.2em;
   background-color: $navyBlue;
   transition: all 0.3s;
+}
+
+.ham-line.open {
+  background-color: $white;
 }
 
 .ham-line1 {
@@ -92,6 +150,24 @@
   top: 2em;
 }
 
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+.black-bg.open {
+  opacity: .8;
+  visibility: visible;
+}
 
 .header_list {
 
@@ -136,8 +212,22 @@
 }
 
 .tel-number {
+
   a {
     color: $navyBlue;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-image: url(../img/tel29.svg);
+      background-repeat: no-repeat;
+      background-position: center right;
+      width: 3rem;
+      height: 3rem;
+      margin-right: .5rem;
+      margin-bottom: .3rem;
+      vertical-align: middle;
+    }
 
     @include spc {
       font-weight: bold;
@@ -145,41 +235,36 @@
   }
 }
 
+.header_pc-btn {
+  display: none;
+
+  @include spc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 5rem;
+    margin-right: 1rem;
+  }
+}
+
 .square-request-btn {
   font-size: 1.4rem;
   line-height: 1.7;
   font-weight: bold;
-  height: 5rem;
-  margin-right: 1rem;
-  width: 14rem;
   border-radius: .5rem;
   background-color: $yellowOrange;
-  width: 10rem;
-  display: none;
-  justify-content: center;
-  align-items: center;
   color: $white;
-
-  @include spc {
-    display: flex;
-  }
 }
 
 .contact-btn {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.7;
-  height: 5rem;
-  width: 13.7rem;
   border-radius: .5rem;
-  margin-right: 1rem;
-  background-color: $navyBlue;
-  display: none;
-  justify-content: center;
-  align-items: center;
   color: $white;
 
   @include spc {
-    display: flex;
+    background-color: $navyBlue;
   }
 }

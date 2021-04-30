@@ -1,27 +1,51 @@
 @charset "utf-8";
 
-// @import 'style.scss';
-
-.footer {}
+@import 'style.scss';
 
 .footer_top-wrapper {
-  // background-color: $navyBlue;
-  height: 22.964rem;
+  background-color: $navyBlue;
+  height: 18rem;
+
+  @include spc {
+    height: 22.964rem;
+  }
 }
 
 .footer_top {
   display: flex;
+  padding-top: 2rem;
+
+  @include spc {
+    padding-top: 4.5rem;
+  }
 }
 
-.footer_top-left {}
-
 .footer_top-left-list {
-  display: flex;
+
+  @include spc {
+    display: flex;
+
+    :first-child {
+      padding-left: 0;
+    }
+
+    :last-child {
+      border-right: none;
+    }
+  }
 }
 
 .footer_top-left-list-item {
+  margin-top: 1rem;
+
+  @include spc {
+    margin-top: 0;
+    padding: 0 2rem;
+    border-right: 1px solid $white;
+  }
 
   a {
+    color: $white;
     font-weight: bold;
   }
 }
@@ -32,23 +56,52 @@
 }
 
 .footer_logo {
+  background-color: $white;
 
   a {
+    img {
+      width: 15rem;
 
-    img {}
+      @include spc {
+        width: 19.7rem;
+      }
+    }
   }
 }
-
-.footer_top-right-tel-box {}
 
 .footer_top-right_tel-contact-number {
+  margin-top: 1rem;
+
+  @include spc {
+    margin-top: 2.8rem;
+  }
 
   a {
+    color: $white;
     font-weight: bold;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-image: url(../img/tel16.svg);
+      background-repeat: no-repeat;
+      background-position: center right;
+      width: 4rem;
+      height: 4rem;
+      margin-right: .5rem;
+      vertical-align: middle;
+    }
   }
 }
 
-.footer_top-right_tel-contact-hour {}
+.footer_top-right_tel-contact-hour {
+  color: $white;
+  margin-top: .5rem;
+
+  @include spc {
+    margin-top: 1.3rem;
+  }
+}
 
 .footer_bottom {
   height: 3.6rem;

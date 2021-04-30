@@ -274,6 +274,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: .8;
+}
+
 ul {
   list-style: none;
 }
@@ -323,10 +327,22 @@ ul {
 }
 
 .news_article {
-  padding-top: 2.83582vh;
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .news_article {
+    padding-top: 2.83582vh;
+  }
 }
 
 .news_article-title {
-  padding: 2.23881vh 0 6.41791vh;
+  padding: 2rem 0 3rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .news_article-title {
+    padding: 2.23881vh 0 6.41791vh;
+  }
 }
 /*# sourceMappingURL=news.css.map */

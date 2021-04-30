@@ -13,9 +13,17 @@
 }
 
 .news_article {
-  padding-top: vh(670, 19);
+  padding-top: 2rem;
+
+  @include spc {
+    padding-top: vh(670, 19);
+  }
 }
 
 .news_article-title {
-  padding: vh(670, 15) 0 vh(670, 43);
+  padding: 2rem 0 3rem;
+
+  @include spc {
+    padding: vh(670, 15) 0 vh(670, 43);
+  }
 }
