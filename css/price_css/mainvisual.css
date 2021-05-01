@@ -314,57 +314,25 @@ ul {
   }
 }
 
-.price_img-box {
-  background-image: url(../../img/price.jpg);
+.mainvisual {
+  background-image: url(../../img/plan.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin: 3rem 0 3rem;
-  padding: 3rem 0;
+  width: 100vw;
+  height: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (min-width: 1280px) {
-  .price_img-box {
-    padding: 6rem 0 5.3rem;
-    margin: 4.3rem 0 4rem;
-  }
-}
-
-.price_img-box-title {
+.mainvisual_text {
   color: #FFFFFF;
 }
-
-.price_img-box-link {
-  margin-top: 2rem;
-}
-
-@media screen and (min-width: 1280px) {
-  .price_img-box-link {
-    margin-top: 2.7rem;
-  }
-}
-
-.price_img-box-text {
-  font-weight: bold;
-}
-
-.price_img-box-text a {
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
-  line-height: 1.7;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-@media screen and (min-width: 1280px) {
-  .price_img-box-text a {
-    font-size: 1.6rem;
-    padding: 1.5rem 4.5rem;
-  }
-}
-/*# sourceMappingURL=fee.css.map */
+/*# sourceMappingURL=mainvisual.css.map */

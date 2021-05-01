@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+@import '../share_css/style.scss';
+
+.mainvisual {
+  background-image: url(../../img/plan.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: vh(400, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainvisual_text {
+  color: $white;
+}

@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+@import '../share_css/style.scss';
+
+.price_main {
+  padding-bottom: 6.2rem;
+}
+
+.breadcrumb-list-box {
+  width: 100vw;
+  background-color: $moreThinGray;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.breadcrumb-list {
+  padding: 2.5rem 0;
+}
+
+.breadcrumb-item {
+  display: inline;
+
+  &::after {
+    /* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+  }
+
+  a {
+    color: $navyBlue;
+    border-bottom: 1px solid $navyBlue;
+  }
+}
+
+.breadcrumb-item:last-child {
+
+  &::after {
+    content: '';
+  }
+}
+
+
+.price_system {
+  text-align: center;
+}
+
+.price_system-title {
+  margin-top: 5.8rem;
+}
+
+.price_system-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.price_system-initiation {}
+
+.price_system-box {
+  width: 28rem;
+  height: 9rem;
+  background-color: $navyBlue;
+  color: $white;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price_system-plus-box {
+  margin: 0 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.price_system-plus {
+  display: inline-block;
+  vertical-align: middle;
+  color: $navyBlue;
+  line-height: 1;
+  width: 2rem;
+  height: 2px;
+  background: $navyBlue;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: rotate(90deg);
+  }
+}
+
+.price_system-monthly {}
+
+.price_system-text {
+  text-align: left;
+  margin-top: 4.6rem;
+}
+
+
+.price_list {}
+
+.price_title {
+  margin-top: 9rem;
+  text-align: center;
+}
+
+.price_cards {
+  display: flex;
+  margin-top: 13rem;
+
+  :last-child {
+    padding-right: 0;
+  }
+
+  // align-items: center;
+  // justify-content: center;
+}
+
+.price_card {
+  flex: 0 0 25%;
+  text-align: center;
+  padding-right: .6rem;
+  // box-sizing: border-box;
+}
+
+.price_card-title {
+  background-color: $navyBlue;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem; //タイトルの高さ
+}
+
+.price_card-title-recommend1 {
+  background-color: $yellowOrange;
+  margin-top: -4rem; //下のおすすめを上に上げる
+  height: 4rem; //上のおすすめの高さ
+  display: flex;
+  align-items: flex-end;
+}
+
+.price_card-title-recommend2 {
+  background-color: $yellowOrange;
+  height: 6rem; //下のおすすめの高さ
+}
+
+.price_card-inner {
+  border: 1px solid $navyBlue;
+  border-top: none;
+  height: 41.4rem;
+}
+
+.price_card-amount {
+  font-size: 2.5rem;
+  line-height: 1.6;
+  padding-top: 3rem;
+}
+
+.price_card-amount-recommend {
+  color: $yellowOrange;
+}
+
+.price_card-monthly-text {
+  margin-top: 1.4rem;
+}
+
+.price_card-content-text-box {
+  margin-top: 2.5rem;
+}
+
+.price_card-content-text {
+  margin-top: 2.3rem;
+  display: inline-block;
+  position: relative;
+}
+
+.price_card-check {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1.5em;
+  width: 10px;
+  height: 6px;
+  border-left: 3px solid $navyBlue;
+  border-bottom: 3px solid $navyBlue;
+  transform: rotate(-45deg);
+}

@@ -3,7 +3,7 @@
 @import '../share_css/style.scss';
 
 
-.fee_img-box {
+.price_img-box {
   background-image: url(../../img/price.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -22,11 +22,11 @@
   }
 }
 
-.fee_img-box-title {
+.price_img-box-title {
   color: $white;
 }
 
-.fee_img-box-link {
+.price_img-box-link {
   margin-top: 2rem;
 
   @include spc {
@@ -34,7 +34,7 @@
   }
 }
 
-.fee_img-box-text {
+.price_img-box-text {
   font-weight: bold;
 
   a {
