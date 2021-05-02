@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@import '../share_css/style.scss';
+
+.breadcrumb-list-box {
+  width: 100vw;
+  background-color: $moreThinGray;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.breadcrumb-list {
+  padding: 2.5rem 0;
+}
+
+.breadcrumb-item {
+  display: inline;
+
+  &::after {
+    /* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+  }
+
+  a {
+    color: $navyBlue;
+    border-bottom: 1px solid $navyBlue;
+  }
+}
+
+.breadcrumb-item:last-child {
+
+  &::after {
+    content: '';
+  }
+}

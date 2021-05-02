@@ -315,24 +315,6 @@ ul {
 }
 
 .mainvisual {
-  background-image: url(../../img/plan.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 55vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background-image: url(../../img/blog.jpg);
 }
-
-.mainvisual_text {
-  color: #FFFFFF;
-}
-/*# sourceMappingURL=mainvisual.css.map */
+/*# sourceMappingURL=blog_mainvisual.css.map */

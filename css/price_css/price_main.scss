@@ -6,41 +6,6 @@
   padding-bottom: 6.2rem;
 }
 
-.breadcrumb-list-box {
-  width: 100vw;
-  background-color: $moreThinGray;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.breadcrumb-list {
-  padding: 2.5rem 0;
-}
-
-.breadcrumb-item {
-  display: inline;
-
-  &::after {
-    /* >を表示*/
-    content: '>';
-    padding: 0 0.2em;
-  }
-
-  a {
-    color: $navyBlue;
-    border-bottom: 1px solid $navyBlue;
-  }
-}
-
-.breadcrumb-item:last-child {
-
-  &::after {
-    content: '';
-  }
-}
-
-
 .price_system {
   text-align: center;
 }
@@ -54,8 +19,6 @@
   justify-content: center;
   margin-top: 6rem;
 }
-
-.price_system-initiation {}
 
 .price_system-box {
   width: 28rem;
@@ -98,15 +61,10 @@
   }
 }
 
-.price_system-monthly {}
-
 .price_system-text {
   text-align: left;
   margin-top: 4.6rem;
 }
-
-
-.price_list {}
 
 .price_title {
   margin-top: 9rem;
@@ -115,21 +73,42 @@
 
 .price_cards {
   display: flex;
-  margin-top: 13rem;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 3rem;
 
   :last-child {
     padding-right: 0;
   }
 
-  // align-items: center;
-  // justify-content: center;
+  @include ipad {
+    margin-top: 13rem;
+  }
 }
 
 .price_card {
-  flex: 0 0 25%;
   text-align: center;
-  padding-right: .6rem;
-  // box-sizing: border-box;
+  width: 100%;
+  margin-top: 1rem;
+
+  @include ipad {
+    width: 48%;
+  }
+
+  @include spc {
+    width: 23%;
+    margin-top: 0;
+  }
+}
+
+.price_card-recommend {
+  position: relative;
+  margin-top: 5rem;
+
+  @include spc {
+    margin-top: 0;
+  }
 }
 
 .price_card-title {
@@ -139,14 +118,22 @@
   justify-content: center;
   align-items: center;
   height: 6rem; //タイトルの高さ
+  line-height: 2.2;
+  font-weight: bold;
 }
 
 .price_card-title-recommend1 {
   background-color: $yellowOrange;
-  margin-top: -4rem; //下のおすすめを上に上げる
   height: 4rem; //上のおすすめの高さ
   display: flex;
   align-items: flex-end;
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+
+  @include spc {
+    margin-top: 0;
+  }
 }
 
 .price_card-title-recommend2 {
@@ -154,16 +141,29 @@
   height: 6rem; //下のおすすめの高さ
 }
 
+.price_card-recommend-after {
+  margin-top: 5rem;
+
+  @include spc {
+    margin-top: 0;
+  }
+}
+
 .price_card-inner {
   border: 1px solid $navyBlue;
   border-top: none;
-  height: 41.4rem;
+  height: 34rem;
+
+  @include spc {
+
+    height: 41.4rem;
+  }
 }
 
 .price_card-amount {
   font-size: 2.5rem;
   line-height: 1.6;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .price_card-amount-recommend {
@@ -171,28 +171,31 @@
 }
 
 .price_card-monthly-text {
-  margin-top: 1.4rem;
+  margin-top: 1rem;
 }
 
 .price_card-content-text-box {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .price_card-content-text {
-  margin-top: 2.3rem;
+  margin-top: 1rem;
   display: inline-block;
-  position: relative;
-}
+  // position: relative;
 
-.price_card-check {
-  content: '';
-  display: block;
-  position: absolute;
-  top: .5em;
-  left: -1.5em;
-  width: 10px;
-  height: 6px;
-  border-left: 3px solid $navyBlue;
-  border-bottom: 3px solid $navyBlue;
-  transform: rotate(-45deg);
+  &::before {
+
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -.2em;
+    margin-right: .5rem;
+    width: 10px;
+    height: 6px;
+    border-left: 3px solid $navyBlue;
+    border-bottom: 3px solid $navyBlue;
+    transform: rotate(-45deg);
+  }
 }

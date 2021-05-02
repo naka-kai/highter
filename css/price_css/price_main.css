@@ -318,38 +318,6 @@ ul {
   padding-bottom: 6.2rem;
 }
 
-.breadcrumb-list-box {
-  width: 100vw;
-  background-color: #F8F8F8;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.breadcrumb-list {
-  padding: 2.5rem 0;
-}
-
-.breadcrumb-item {
-  display: inline;
-}
-
-.breadcrumb-item::after {
-  /* >を表示*/
-  content: '>';
-  padding: 0 0.2em;
-}
-
-.breadcrumb-item a {
-  color: #1B224C;
-  border-bottom: 1px solid #1B224C;
-}
-
-.breadcrumb-item:last-child::after {
-  content: '';
-}
-
 .price_system {
   text-align: center;
 }
@@ -434,19 +402,53 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 13rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 .price_cards :last-child {
   padding-right: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .price_cards {
+    margin-top: 13rem;
+  }
+}
+
 .price_card {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
   text-align: center;
-  padding-right: .6rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .price_card {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .price_card {
+    width: 23%;
+    margin-top: 0;
+  }
+}
+
+.price_card-recommend {
+  position: relative;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .price_card-recommend {
+    margin-top: 0;
+  }
 }
 
 .price_card-title {
@@ -462,11 +464,12 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   height: 6rem;
+  line-height: 2.2;
+  font-weight: bold;
 }
 
 .price_card-title-recommend1 {
   background-color: #F5A623;
-  margin-top: -4rem;
   height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +477,15 @@ ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .price_card-title-recommend1 {
+    margin-top: 0;
+  }
 }
 
 .price_card-title-recommend2 {
@@ -481,16 +493,32 @@ ul {
   height: 6rem;
 }
 
+.price_card-recommend-after {
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .price_card-recommend-after {
+    margin-top: 0;
+  }
+}
+
 .price_card-inner {
   border: 1px solid #1B224C;
   border-top: none;
-  height: 41.4rem;
+  height: 34rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .price_card-inner {
+    height: 41.4rem;
+  }
 }
 
 .price_card-amount {
   font-size: 2.5rem;
   line-height: 1.6;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .price_card-amount-recommend {
@@ -498,25 +526,31 @@ ul {
 }
 
 .price_card-monthly-text {
-  margin-top: 1.4rem;
+  margin-top: 1rem;
 }
 
 .price_card-content-text-box {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .price_card-content-text {
-  margin-top: 2.3rem;
+  margin-top: 1rem;
   display: inline-block;
-  position: relative;
 }
 
-.price_card-check {
+.price_card-content-text::before {
   content: '';
-  display: block;
-  position: absolute;
-  top: .5em;
-  left: -1.5em;
+  display: inline-block;
+  position: relative;
+  top: -.2em;
+  margin-right: .5rem;
   width: 10px;
   height: 6px;
   border-left: 3px solid #1B224C;
@@ -524,4 +558,4 @@ ul {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=price_main.css.map */
