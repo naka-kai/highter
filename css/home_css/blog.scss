@@ -30,6 +30,12 @@
 
   img {
     width: 10rem;
+    height: 11rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    position: relative;
 
     @media screen and (min-width: 1000px) {
       width: vw(1280, 150);

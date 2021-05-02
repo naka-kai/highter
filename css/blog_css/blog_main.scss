@@ -3,3 +3,57 @@
 @import '../share_css/style.scss';
 
 
+.blog_container {
+  width: 70%;
+}
+
+.blog_article {
+  display: block;
+  padding-top: 3rem;
+
+  @include ipad {
+    display: flex;
+    padding-top: vh(670, 30);
+  }
+}
+
+.blog_article-img-box {
+
+  img {
+    width: 100%;
+  }
+}
+
+.blog_category {
+  line-height: 2.4;
+  padding: .2rem 1.3rem;
+}
+
+.blog_article-text-box {
+  margin-left: 0;
+
+  @include ipad {
+    margin-left: 2rem;
+  }
+}
+
+.blog_article-date {
+  line-height: 1.8;
+  margin-top: 1rem;
+
+  @include ipad {
+    margin-top: 0;
+  }
+}
+
+.blog_article-title {
+
+  @include spc {
+    font-size: 1.8rem;
+  }
+}
+
+.blog_article-text {
+  line-height: 1.5;
+  margin-top: 1rem;
+}

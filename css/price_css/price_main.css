@@ -398,7 +398,18 @@ ul {
   text-align: center;
 }
 
+.nav-wrap {
+  position: relative;
+}
+
+.scroll-nav {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .price_cards {
+  max-width: 1280px;
+  min-width: 770px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,47 +419,20 @@ ul {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 3rem;
+  margin-top: 13rem;
 }
 
 .price_cards :last-child {
   padding-right: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .price_cards {
-    margin-top: 13rem;
-  }
-}
-
 .price_card {
   text-align: center;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .price_card {
-    width: 48%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .price_card {
-    width: 23%;
-    margin-top: 0;
-  }
+  width: 23%;
 }
 
 .price_card-recommend {
   position: relative;
-  margin-top: 5rem;
-}
-
-@media screen and (min-width: 1280px) {
-  .price_card-recommend {
-    margin-top: 0;
-  }
 }
 
 .price_card-title {
@@ -491,16 +475,6 @@ ul {
 .price_card-title-recommend2 {
   background-color: #F5A623;
   height: 6rem;
-}
-
-.price_card-recommend-after {
-  margin-top: 5rem;
-}
-
-@media screen and (min-width: 1280px) {
-  .price_card-recommend-after {
-    margin-top: 0;
-  }
 }
 
 .price_card-inner {

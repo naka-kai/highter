@@ -38,4 +38,10 @@ $(function () {
     $(this).next().slideToggle(300);
   });
 
+  new ScrollHint('.js-scrollable', {
+    i18n: {
+      scrollable: 'スクロールできます'
+    }
+  });
+
 });

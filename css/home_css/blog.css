@@ -345,6 +345,13 @@ ul {
 
 .blog_article-img-box img {
   width: 10rem;
+  height: 11rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
 }
 
 @media screen and (min-width: 1000px) {

@@ -71,43 +71,55 @@
   text-align: center;
 }
 
+.nav-wrap {
+  position: relative;
+}
+
+.scroll-nav {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .price_cards {
+  max-width: 1280px;
+  min-width: 770px;
   display: flex;
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
-  margin-top: 3rem;
+  // margin-top: 3rem;
+  margin-top: 13rem;
 
   :last-child {
     padding-right: 0;
   }
 
   @include ipad {
-    margin-top: 13rem;
   }
 }
 
 .price_card {
   text-align: center;
-  width: 100%;
-  margin-top: 1rem;
+  // width: 100%;
+  // margin-top: 1rem;
+  width: 23%;
 
-  @include ipad {
-    width: 48%;
-  }
+  // @include ipad {
+  //   width: 48%;
+  // }
 
-  @include spc {
-    width: 23%;
-    margin-top: 0;
-  }
+  // @include spc {
+  //   width: 23%;
+  //   margin-top: 0;
+  // }
 }
 
 .price_card-recommend {
   position: relative;
-  margin-top: 5rem;
+  // margin-top: 5rem;
 
   @include spc {
-    margin-top: 0;
+    // margin-top: 0;
   }
 }
 
@@ -142,10 +154,10 @@
 }
 
 .price_card-recommend-after {
-  margin-top: 5rem;
+  // margin-top: 5rem;
 
   @include spc {
-    margin-top: 0;
+    // margin-top: 0;
   }
 }
 
