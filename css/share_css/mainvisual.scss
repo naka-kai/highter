@@ -8,10 +8,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: vh(600, 220);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 13rem;
+
+  @include ipad {
+    height: vh(600, 220);
+  }
 }
 
 .mainvisual_text {

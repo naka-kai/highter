@@ -323,7 +323,13 @@ ul {
 }
 
 .price_system-title {
-  margin-top: 5.8rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .price_system-title {
+    margin-top: 5.8rem;
+  }
 }
 
 .price_system-content {

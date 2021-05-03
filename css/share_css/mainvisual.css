@@ -320,7 +320,6 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 36.66667vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,6 +329,13 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 13rem;
+}
+
+@media screen and (min-width: 768px) {
+  .mainvisual {
+    height: 36.66667vh;
+  }
 }
 
 .mainvisual_text {

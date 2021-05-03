@@ -7,6 +7,15 @@
   width: 70%;
 }
 
+.blog_title {
+  text-align: center;
+  margin-top: 3rem;
+
+  @include spc {
+    margin-top: 6rem;
+  }
+}
+
 .blog_article {
   display: block;
   padding-top: 3rem;

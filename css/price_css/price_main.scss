@@ -11,7 +11,11 @@
 }
 
 .price_system-title {
-  margin-top: 5.8rem;
+  margin-top: 3rem;
+
+  @include spc {
+    margin-top: 5.8rem;
+  }
 }
 
 .price_system-content {
