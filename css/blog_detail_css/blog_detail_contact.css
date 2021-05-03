@@ -315,6 +315,12 @@ ul {
 }
 
 .blog_detail_contact {
-  margin-top: 7rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .blog_detail_contact {
+    margin-top: 7rem;
+  }
 }
 /*# sourceMappingURL=blog_detail_contact.css.map */

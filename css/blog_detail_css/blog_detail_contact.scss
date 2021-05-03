@@ -3,5 +3,9 @@
 @import '../share_css/style.scss';
 
 .blog_detail_contact {
-  margin-top: 7rem;
+  margin-top: 3rem;
+
+  @include spc {
+    margin-top: 7rem;
+  }
 }
