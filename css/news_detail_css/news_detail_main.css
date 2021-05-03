@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+body {
+  font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #1B224C;
+}
+
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 4.8rem;
+    line-height: 1.4;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 2.1rem;
+  color: #1B224C;
+}
+
+@media screen and (min-width: 1280px) {
+  h2 {
+    font-size: 3.6rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.7;
+  color: #1B224C;
+}
+
+@media screen and (min-width: 1280px) {
+  h3 {
+    font-size: 3.2rem;
+  }
+}
+
+h4 {
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  color: #1B224C;
+}
+
+@media screen and (min-width: 1280px) {
+  h4 {
+    font-size: 2.6rem;
+  }
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #1B224C;
+}
+
+@media screen and (min-width: 1280px) {
+  h5 {
+    line-height: 1.7;
+  }
+}
+
+p,
+.p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #1B224C;
+}
+
+@media screen and (min-width: 1280px) {
+  p,
+  .p {
+    line-height: 1.7;
+    font-size: 1.6rem;
+  }
+}
+
+small {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.7;
+  color: #1B224C;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .8;
+}
+
+ul {
+  list-style: none;
+}
+
+.smallDone {
+  display: block;
+}
+
+@media screen and (min-width: 1280px) {
+  .smallDone {
+    display: none;
+  }
+}
+
+.smallNone {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .smallNone {
+    display: block;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70.3125vw;
+  }
+}
+
+.news_article-title {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .news_article-title {
+    margin-top: 6rem;
+    font-size: 2.8rem;
+    line-height: 1.7;
+  }
+}
+
+.news_article-date {
+  margin-top: 1.7rem;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .news_article-date {
+    margin-top: 3.5rem;
+  }
+}
+
+.news_article-main-title {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .news_article-main-title {
+    margin-top: 6rem;
+  }
+}
+
+.news_article-main-text {
+  line-height: 1.5;
+  margin-top: 3rem;
+}
+
+.news_article-sub-title {
+  border-left: 4px solid #1B224C;
+  padding-left: 1.2rem;
+  margin-top: 5rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.news_article-sub-text {
+  line-height: 1.5;
+  margin-top: 3rem;
+}
+
+.news_article-quote {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F8F8F8;
+  padding: 1rem 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .news_article-quote {
+    margin-top: 3rem;
+    padding: 2.7rem 0 4rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .news_article-quote {
+    margin-top: 5rem;
+  }
+}
+
+.news_article-quote::before {
+  content: '';
+  background-image: url(../../img/quote.svg);
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .news_article-quote::before {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-top: -.7rem;
+    margin-left: 2rem;
+  }
+}
+
+.news_article-quote-text-box {
+  width: 90%;
+}
+
+.news_article-quote-text {
+  line-height: 1.5;
+}
+
+.news_article-sub-img {
+  margin-top: 3rem;
+}
+
+.news_article-sub-img img {
+  max-width: 100%;
+}
+
+.news_article-list-wrapper {
+  margin-top: 3.5rem;
+}
+
+.news_article-list {
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.news_article-list::before {
+  content: '';
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  display: block;
+  background-color: #F5A623;
+  position: absolute;
+  top: .6rem;
+  left: 0;
+}
+
+.news_article-list-text {
+  line-height: 1.5;
+}
+
+.news_article-link {
+  margin: 3.5rem 0 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .news_article-link {
+    margin: 6.5rem 0;
+  }
+}
+
+.news_article-link a {
+  text-decoration: underline;
+  color: #F5A623;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=news_detail_main.css.map */
