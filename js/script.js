@@ -7,7 +7,6 @@ $(function () {
     $('.ham-line, .ham-line1, .ham-line2, .ham-line3').toggleClass('open');
   });
 
-
   //ハンバーガーメニューのナビリンククリック後自動で閉じる
   $('.header-sp-menu-list a').on('click', function () {
     $('.ham').click();
@@ -38,10 +37,14 @@ $(function () {
     $(this).next().slideToggle(300);
   });
 
-  new ScrollHint('.js-scrollable', {
-    i18n: {
-      scrollable: 'スクロールできます'
-    }
+  $(function () {
+    $(".ham").click(function () {  // トリガーをクリックした時の条件分岐
+      if ($(".header-sp-nav").hasClass("open")) {  // ナビを閉じるときの処理
+        $("html").addClass("is-fixed");  // 背景固定解除！
+      } else {                              // ナビを開くときの処理
+        $("html").removeClass("is-fixed");     // 背景固定！
+      }
+    });
   });
 
 });

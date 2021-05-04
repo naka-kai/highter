@@ -181,11 +181,6 @@ body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
-.is-fixed {
-  height: 100%;
-  overflow: hidden;
-}
-
 h1 {
   font-size: 4rem;
   font-weight: bold;
@@ -318,4 +313,8 @@ ul {
     width: 70.3125vw;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+.mainvisual {
+  background-image: url(../../img/cta.svg);
+}
+/*# sourceMappingURL=contact_mainvisual.css.map */

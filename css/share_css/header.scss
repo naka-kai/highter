@@ -49,7 +49,7 @@
   width: 100%;
   max-width: 250px;
   height: 100%;
-  background-color: $navyBlue;
+  background-color: $white;
   position: fixed;
   top: 0;
   right: 0;
@@ -60,24 +60,31 @@
 
 .header-sp-nav.open {
   transform: translate(0);
+
+  @include spc {
+    transform: translate(250px);
+  }
 }
 
 .header-sp-menu {
-  // padding-top: 5rem;
+  padding-top: 8rem;
 
   @include ipad {
     // padding-top: 8rem;
   }
 }
 
-.header-sp-menu-list {
-  margin: 5rem 4rem;
+.header-sp-menu-link {
+  display: block;
+  color: $white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: $navyBlue;
+}
 
-  a {
-    color: $white;
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
+.header-sp-menu-list {
+  padding: 3rem 2rem;
+  border-bottom: 1px solid $white;
 }
 
 .header_sp-btn-box {
@@ -92,9 +99,21 @@
   height: 4rem;
   background-color: $yellowOrange;
   margin-left: 2rem;
+  margin-top: 2rem;
 
   @include spc {
     display: none;
+  }
+}
+
+.sp-tel-box {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.sp-tel-number {
+  a {
+    margin-left: -3rem;
   }
 }
 
@@ -117,10 +136,6 @@
   height: 0.2em;
   background-color: $navyBlue;
   transition: all 0.3s;
-}
-
-.ham-line.open {
-  background-color: $white;
 }
 
 .ham-line1 {
@@ -262,8 +277,8 @@
   line-height: 1.7;
   border-radius: .5rem;
   color: $white;
+  background-color: $navyBlue;
 
-  @include spc {
-    background-color: $navyBlue;
-  }
+  // @include spc {
+  // }
 }

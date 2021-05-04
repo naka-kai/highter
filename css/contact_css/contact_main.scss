@@ -1,0 +1,172 @@
+@charset 'utf-8';
+
+@import '../share_css/style.scss';
+
+.db {
+  display: block;
+}
+
+.contact_main-container {
+  margin: 0 auto;
+
+  @include ipad {
+    width: 75%;
+  }
+}
+
+.contact_form {
+  margin-top: 6rem;
+}
+
+.companyname-label {
+  margin-top: 4rem;
+}
+
+input::placeholder {
+  color: #B4B4B4;
+}
+
+.companyname-area {
+  width: calc(100% - 4.8rem);
+  padding: 2.2rem;
+  margin-top: 1.2rem;
+
+  @include ipad {
+    width: 100%;
+  }
+}
+
+.yourname-label {
+  margin-top: 2rem;
+}
+
+.yourname-area {
+  width: calc(100% - 4.8rem);
+  padding: 2.2rem;
+  margin-top: 1.2rem;
+
+  @include ipad {
+    width: 100%;
+  }
+}
+
+.mail-label {
+  margin-top: 2rem;
+}
+
+.mail-area {
+  width: calc(100% - 4.8rem);
+  padding: 2.2rem;
+  margin-top: 1.2rem;
+
+  @include ipad {
+    width: 100%;
+  }
+}
+
+.num-label {
+  margin-top: 2rem;
+}
+
+.num-area {
+  width: calc(100% - 4.8rem);
+  padding: 2.2rem;
+  margin-top: 1.2rem;
+
+  @include ipad {
+    width: 100%;
+  }
+}
+
+.contact_form-type-text {
+  margin-top: 2rem;
+}
+
+input[type=radio] {
+  width: 2rem;
+  height: 2rem;
+}
+
+.business-wrapper {
+  margin-top: 1.9rem;
+  display: flex;
+}
+
+.business-btn {
+  margin-right: 1.9rem;
+}
+
+.type-btn-wrapper {
+  margin-top: 1.9rem;
+  display: flex;
+}
+
+.type-btn {
+  margin-right: 1.9rem;
+}
+
+.document-btn-wrapper {
+  margin-top: 1.9rem;
+  display: flex;
+}
+
+.document-btn {
+  margin-right: 1.9rem;
+}
+
+.other-btn-wrapper {
+  margin-top: 1.9rem;
+  display: flex;
+}
+
+.other-btn {
+  margin-right: 1.9rem;
+}
+
+.content-text {
+  margin-top: 2.4rem;
+}
+
+textarea::placeholder {
+  color: #B4B4B4;
+}
+
+.content-area {
+  width: calc(100% - 4.6rem);
+  padding: 2.2rem;
+  margin-top: 1.2rem;
+
+  @include ipad {
+    width: 100%;
+  }
+}
+
+.privacy-text {
+  margin-top: 3.1rem;
+  text-align: center;
+
+  a {
+    color: $yellowOrange;
+    text-decoration: underline;
+  }
+}
+
+.contact_form-privacy {
+  text-align: center;
+  margin-top: 3.1rem;
+  display: flex;
+  justify-content: center
+}
+
+.privacy-agree {
+  display: inline;
+}
+
+.submit-btn {
+  margin: 4.6rem auto 8.2rem;
+  padding: 1.6rem 6.8rem;
+  background-color: $navyBlue;
+  color: $white;
+  border-radius: 5px;
+  border: none;
+}

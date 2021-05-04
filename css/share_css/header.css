@@ -181,6 +181,11 @@ body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
+.is-fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: bold;
@@ -375,7 +380,7 @@ ul {
   width: 100%;
   max-width: 250px;
   height: 100%;
-  background-color: #1B224C;
+  background-color: #FFFFFF;
   position: fixed;
   top: 0;
   right: 0;
@@ -391,14 +396,28 @@ ul {
           transform: translate(0);
 }
 
-.header-sp-menu-list {
-  margin: 5rem 4rem;
+@media screen and (min-width: 1280px) {
+  .header-sp-nav.open {
+    -webkit-transform: translate(250px);
+            transform: translate(250px);
+  }
 }
 
-.header-sp-menu-list a {
+.header-sp-menu {
+  padding-top: 8rem;
+}
+
+.header-sp-menu-link {
+  display: block;
   color: #FFFFFF;
   font-size: 1.6rem;
   font-weight: bold;
+  background-color: #1B224C;
+}
+
+.header-sp-menu-list {
+  padding: 3rem 2rem;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .header_sp-btn-box {
@@ -421,12 +440,22 @@ ul {
   height: 4rem;
   background-color: #F5A623;
   margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 1280px) {
   .header_sp-btn {
     display: none;
   }
+}
+
+.sp-tel-box {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.sp-tel-number a {
+  margin-left: -3rem;
 }
 
 .ham {
@@ -451,10 +480,6 @@ ul {
   background-color: #1B224C;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-.ham-line.open {
-  background-color: #FFFFFF;
 }
 
 .ham-line1 {
@@ -612,11 +637,6 @@ ul {
   line-height: 1.7;
   border-radius: .5rem;
   color: #FFFFFF;
-}
-
-@media screen and (min-width: 1280px) {
-  .contact-btn {
-    background-color: #1B224C;
-  }
+  background-color: #1B224C;
 }
 /*# sourceMappingURL=header.css.map */
