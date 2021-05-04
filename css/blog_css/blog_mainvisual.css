@@ -315,6 +315,6 @@ ul {
 }
 
 .mainvisual {
-  background-image: url(../../img/blog.jpg);
+  background-image: url(../../<?php echo get_template_directory_uri(); ?>/img/blog.jpg);
 }
 /*# sourceMappingURL=blog_mainvisual.css.map */

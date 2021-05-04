@@ -445,7 +445,7 @@ ul {
 
 .blog_article-quote::before {
   content: '';
-  background-image: url(../../img/quote.svg);
+  background-image: url(../../<?php echo get_template_directory_uri(); ?>/img/quote.svg);
   width: 2rem;
   height: 2rem;
   background-size: cover;

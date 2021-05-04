@@ -315,7 +315,7 @@ ul {
 }
 
 .price_img-box {
-  background-image: url(../../img/price.jpg);
+  background-image: url(../../<?php echo get_template_directory_uri(); ?>/img/price.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

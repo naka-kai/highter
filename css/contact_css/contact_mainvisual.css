@@ -315,6 +315,6 @@ ul {
 }
 
 .mainvisual {
-  background-image: url(../../img/cta.svg);
+  background-image: url(../../<?php echo get_template_directory_uri(); ?>/img/cta.svg);
 }
 /*# sourceMappingURL=contact_mainvisual.css.map */

@@ -20,7 +20,7 @@
 
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
 </head>
 
 <body>
@@ -28,16 +28,24 @@
   <header class="header">
     <div class="header_logo">
       <a href="">
-        <img src="img/logo.jpg" alt="Engress">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Engress">
       </a>
     </div>
     <nav class="header_nav" id="header_nav">
       <nav class="header-sp-nav">
         <ul class="header-sp-menu">
-          <a href="#" class="header-sp-menu-link"><li class="header-sp-menu-list">ホーム</li></a>
-          <a href="#" class="header-sp-menu-link"><li class="header-sp-menu-list">お知らせ</li></a>
-          <a href="#" class="header-sp-menu-link"><li class="header-sp-menu-list">ブログ</li></a>
-          <a href="#" class="header-sp-menu-link"><li class="header-sp-menu-list">コース・料金</li></a>
+          <a href="#" class="header-sp-menu-link">
+            <li class="header-sp-menu-list">ホーム</li>
+          </a>
+          <a href="#" class="header-sp-menu-link">
+            <li class="header-sp-menu-list">お知らせ</li>
+          </a>
+          <a href="#" class="header-sp-menu-link">
+            <li class="header-sp-menu-list">ブログ</li>
+          </a>
+          <a href="#" class="header-sp-menu-link">
+            <li class="header-sp-menu-list">コース・料金</li>
+          </a>
         </ul>
         <div class="header_sp-btn-box">
           <a href="#">
@@ -130,7 +138,8 @@
             </div>
             <p class="blog_article-date">2020-01-01</p>
           </div>
-          <figure class="blog_article-main-img"><img src="img/sample01.svg" alt=""></figure>
+          <figure class="blog_article-main-img"><img src="<?php echo get_template_directory_uri(); ?>/img/sample01.svg"
+              alt=""></figure>
           <h4 class="blog_article-main-title">見出しh2</h4>
           <p class="blog_article-main-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
           <h5 class="blog_article-sub-title">見出しh3</h5>
@@ -140,7 +149,8 @@
               <p class="blog_article-quote-text">引用文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
           </blockquote>
-          <figure class="blog_article-sub-img"><img src="img/sample4.svg" alt=""></figure>
+          <figure class="blog_article-sub-img"><img src="<?php echo get_template_directory_uri(); ?>/img/sample4.svg"
+              alt=""></figure>
           <ul class="blog_article-list-wrapper">
             <li class="blog_article-list">
               <p class="blog_article-list-text">リストリストリストリストリスト</p>
@@ -158,7 +168,8 @@
         <div class="blog_recommend">
           <h4 class="blog_recommend-title">おすすめの記事</h4>
           <article class="blog_recommend-article">
-            <figure class="blog_recommend-article-img"><img src="img/sample01.svg" alt=""><small
+            <figure class="blog_recommend-article-img"><img
+                src="<?php echo get_template_directory_uri(); ?>/img/sample01.svg" alt=""><small
                 class="blog_recommend-category">カテゴリ1</small>
             </figure>
             <div class="blog_recommend-article-text-box">
@@ -167,7 +178,8 @@
             </div>
           </article>
           <article class="blog_recommend-article">
-            <figure class="blog_recommend-article-img"><img src="img/sample02.svg" alt=""><small
+            <figure class="blog_recommend-article-img"><img
+                src="<?php echo get_template_directory_uri(); ?>/img/sample02.svg" alt=""><small
                 class="blog_recommend-category">カテゴリ3</small>
             </figure>
             <div class="blog_recommend-article-text-box">
@@ -176,7 +188,8 @@
             </div>
           </article>
           <article class="blog_recommend-article">
-            <figure class="blog_recommend-article-img"><img src="img/sample03.svg" alt=""><small
+            <figure class="blog_recommend-article-img"><img
+                src="<?php echo get_template_directory_uri(); ?>/img/sample03.svg" alt=""><small
                 class="blog_recommend-category">カテゴリ2</small>
             </figure>
             <div class="blog_recommend-article-text-box">
@@ -192,19 +205,22 @@
           <div class="blog_sidebar-related">
             <h5 class="blog_sidebar-related-title">関連記事</h5>
             <article class="blog_related-article blog_related-first-article">
-              <figure class="blog_related-article-img-box"><img src="img/26.svg" alt=""></figure>
+              <figure class="blog_related-article-img-box"><img
+                  src="<?php echo get_template_directory_uri(); ?>/img/26.svg" alt=""></figure>
               <div class="blog_related-article-text-box">
                 <small class="blog_related-article-title"><a href="">ブログタイトルテキストテキストテキストテキストテキストテキスト</a></small>
               </div>
             </article>
             <article class="blog_related-article">
-              <figure class="blog_related-article-img-box"><img src="img/26.svg" alt=""></figure>
+              <figure class="blog_related-article-img-box"><img
+                  src="<?php echo get_template_directory_uri(); ?>/img/26.svg" alt=""></figure>
               <div class="blog_related-article-text-box">
                 <small class="blog_related-article-title"><a href="">ブログタイトルテキストテキストテキストテキスト</a></small>
               </div>
             </article>
             <article class="blog_related-article">
-              <figure class="blog_related-article-img-box"><img src="img/26.svg" alt=""></figure>
+              <figure class="blog_related-article-img-box"><img
+                  src="<?php echo get_template_directory_uri(); ?>/img/26.svg" alt=""></figure>
               <div class="blog_related-article-text-box">
                 <small class="blog_related-article-title"><a href="">ブログタイトルテキストテキスト</a></small>
               </div>
@@ -252,7 +268,8 @@
             </ul>
           </div>
           <div class="footer_top-right">
-            <div class="footer_logo"><a href=""><img src="img/logo.jpg" alt="Engress"></a></div>
+            <div class="footer_logo"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg"
+                  alt="Engress"></a></div>
             <div class="footer_top-right-tel-box">
               <p class="footer_top-right_tel-contact-number p"><a href="tel:0123-456-7890">0123-456-7890</a></p><small
                 class="footer_top-right_tel-contact-hour">平日08:00~20:00</small>
