@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+@import '../share_css/style.scss';
+
+
+.contact_detail_main {
+  padding: 8.3rem 0 8rem;
+  text-align: center;
+}
+
+.contact_detail_main-text {}
+
+.contact_detail_main-home {
+  margin-top: 8.3rem;
+
+  a {
+    text-decoration: underline;
+    color: $navyBlue;
+  }
+}
