@@ -4,7 +4,8 @@
     <div class="hero_bg-img">
       <div class="hero_text-box">
         <h1 class="hero_text-title">TOEFL対策は<br class="smallDone">Engress</h1>
-        <h5 class="hero_text-text">日本人へのTOEFL指導歴豊かな講師陣の<br class="smallNone">コーチング型TOEFLスクール</h5><a href="" class="p circle-request-btn-text">
+        <h5 class="hero_text-text">日本人へのTOEFL指導歴豊かな講師陣の<br class="smallNone">コーチング型TOEFLスクール</h5><a href=""
+          class="p circle-request-btn-text">
           <div class="circle-request-btn">資料請求 </div>
         </a>
         <p class="contact-link-text"><a href="">お問い合わせ</a></p>
@@ -24,7 +25,8 @@
       <div class="about_white-text-box-wrapper">
         <div class="about_white-text-box">
           <h2 class="about_white-text-title">Engressは<br>TOEFLに特化したスクールです</h2>
-          <h5 class="about_white-text-text">完全オーダーメイドで、<br class="smallDone">１人１人の悩みに合わせた<br class="smallDone">最適な指導で<br class="smallNone">TOEFLの苦手分野を克服します。</h5>
+          <h5 class="about_white-text-text">完全オーダーメイドで、<br class="smallDone">１人１人の悩みに合わせた<br class="smallDone">最適な指導で<br
+              class="smallNone">TOEFLの苦手分野を克服します。</h5>
         </div>
       </div>
     </div>
@@ -33,7 +35,8 @@
     <div class="container feature_container">
       <h2 class="feature_title">TOEFL対策に特化したEngress3つの強み</h2>
       <div class="feature_box row-reverse">
-        <div class="feature_box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/feature01.jpg" alt=""></div>
+        <div class="feature_box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/feature01.jpg" alt="">
+        </div>
         <div class="feature_box-text-box">
           <div class="feature_box-text-box-category"><small class="feature_box-text-box-category-text">特長 １</small>
           </div>
@@ -45,7 +48,8 @@
       </div>
       <!-- /.feature_box -->
       <div class="feature_box">
-        <div class="feature_box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/feature02.jpg" alt=""></div>
+        <div class="feature_box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/feature02.jpg" alt="">
+        </div>
         <div class="feature_box-text-box feature_box-text-box2">
           <div class="feature_box-text-box-category"><small class="feature_box-text-box-category-text">特長 ２</small>
           </div>
@@ -57,7 +61,8 @@
       </div>
       <!-- /.feature_box -->
       <div class="feature_box row-reverse">
-        <div class="feature_box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/feature03.jpg" alt=""></div>
+        <div class="feature_box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/feature03.jpg" alt="">
+        </div>
         <div class="feature_box-text-box">
           <div class="feature_box-text-box-category"><small class="feature_box-text-box-category-text">特長
               ３</small></div>
@@ -88,7 +93,8 @@
       <div class="example_card-box">
         <div class="example_card-list"><a href="" class="example_card-link">
             <p class="example_card-item-title">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p>
-            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model01.jpg" alt=""></figure>
+            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model01.jpg"
+                alt=""></figure>
             <div class="example_card-item-text-top">
               <p class="example_card-item-profession">会社員</p>
               <p class="example_card-item-name">T.Fujiyamaさん</p>
@@ -101,7 +107,8 @@
         <!-- example_card-list -->
         <div class="example_card-list"><a href="" class="example_card-link">
             <p class="example_card-item-title">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</p>
-            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model02.jpg" alt=""></figure>
+            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model02.jpg"
+                alt=""></figure>
             <div class="example_card-item-text-top">
               <p class="example_card-item-profession">大学生</p>
               <p class="example_card-item-name">Y.Takiyamaさん</p>
@@ -114,7 +121,8 @@
         <!-- example_card-list -->
         <div class="example_card-list"><a href="" class="example_card-link">
             <p class="example_card-item-title">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</p>
-            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model03.jpg" alt=""></figure>
+            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model03.jpg"
+                alt=""></figure>
             <div class="example_card-item-text-top">
               <p class="example_card-item-profession">高校生</p>
               <p class="example_card-item-name">M.Yamadaさん</p>
@@ -206,43 +214,41 @@
       <section class="blog">
         <h3 class="blog_title">ブログ</h3>
         <div class="blog_articles">
-          <article class="blog_article">
-            <figure class="blog_article-img-box"><img src="<?php echo get_template_directory_uri(); ?>/img/sample01.svg" alt="">
-              <small class="blog_category">カテゴリー</small>
-            </figure>
-            <div class="blog_article-text-box">
-              <p class="blog_article-title">Engress説明会in大阪の模様をお伝えします</p><small class="blog_article-date">2020-12-27</small>
-            </div>
-          </article>
-          <article class="blog_article">
-            <figure class="blog_article-img-box"><img src="<?php echo get_template_directory_uri(); ?>/img/sample02.svg" alt=""><small class="blog_category">カテゴリー</small></figure>
-            <div class="blog_article-text-box">
-              <p class="blog_article-title">Engressもくもく会でみんなでTOEFL学習をしませんか？</p><small class="blog_article-date">2020-12-01</small>
-            </div>
-          </article>
-          <article class="blog_article">
-            <figure class="blog_article-img-box"><img src="<?php echo get_template_directory_uri(); ?>/img/sample03.svg" alt=""><small class="blog_category">カテゴリー</small></figure>
-            <div class="blog_article-text-box">
-              <p class="blog_article-title">TOEFL学習にはコーチング学習が最強である話</p><small class="blog_article-date">2020-11–20</small>
-            </div>
-          </article>
+          <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
+          <a href="<?php the_permalink() ;?>">
+            <article class="blog_article">
+              <figure class="blog_article-img-box">
+                <?php if(has_post_thumbnail()): ?>
+                <?php the_post_thumbnail(); ?>
+                <?php else:?>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/sample02.svg" />
+                <?php endif; ?>
+                <small class="blog_category">カテゴリー</small>
+              </figure>
+              <div class="blog_article-text-box">
+                <p class="blog_article-title"><?php the_title(); ?>
+                </p>
+                <small class="blog_article-date">
+                  <?php the_date(); ?></small>
+                </small>
+              </div>
+            </article>
+          </a>
+          <?php endwhile; ?>
+          <?php endif; ?>
         </div>
       </section>
       <section class="news">
-        <h3 class="news_title">お知らせ</h3>
+        <?php if(have_posts()): ?>
+        <?php while(have_posts()): the_post(); ?>
+        <h3 class="news_title"><?php the_title(); ?></h3>
         <div class="news_articles">
-          <article class="news_article"><small class="news_article-date">2020-12-01</small>
-            <p class="news_article-title">2021年のスケジュールについて</p>
-          </article>
-        </div>
-        <div class="news_articles">
-          <article class="news_article"><small class="news_article-date">2019-11-02</small>
-            <p class="news_article-title">11月休校日のお知らせ</p>
-          </article>
-        </div>
-        <div class="news_articles">
-          <article class="news_article"><small class="news_article-date">2020-10-01</small>
-            <p class="news_article-title">10月休校日のお知らせ</p>
+          <article class="news_article">
+            <small class="news_article-date"><?php the_date(); ?></small>
+            <p class="news_article-title"><?php the_content(); ?></p>
+            <?php endwhile;?>
+            <?php endif; ?>
           </article>
         </div>
       </section>
@@ -252,7 +258,8 @@
     <div class="contact_bg-img">
       <div class="contact_text-box">
         <h3 class="contact_text-title">まずは無料で資料請求から</h3>
-        <div class="circle-request-btn contact_circle-request-btn"><a href="" class="p circle-request-btn-text contact_circle-request-btn-text">資料請求 </a></div>
+        <div class="circle-request-btn contact_circle-request-btn"><a href=""
+            class="p circle-request-btn-text contact_circle-request-btn-text">資料請求 </a></div>
         <p class="contact-link-text contact_contact-link-text"><a href="">お問い合わせ</a></p>
       </div>
     </div>

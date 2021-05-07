@@ -394,4 +394,10 @@ ul {
           flex-grow: 1;
   font-weight: bold;
 }
+
+.blog_article-date {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.7;
+}
 /*# sourceMappingURL=blog.css.map */

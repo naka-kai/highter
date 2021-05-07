@@ -340,14 +340,4 @@ ul {
     padding-top: 2.83582vh;
   }
 }
-
-.news_article-title {
-  padding: 2rem 0 3rem;
-}
-
-@media screen and (min-width: 1280px) {
-  .news_article-title {
-    padding: 2.23881vh 0 6.41791vh;
-  }
-}
 /*# sourceMappingURL=news.css.map */
