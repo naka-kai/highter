@@ -61,15 +61,15 @@
   margin-top: 1.5rem;
 }
 
-.example_card-item-profession {
-  width: calc(96% / 2);
+.example_card-item-position {
+  width: calc(96% / 10 * 4);
   background-color: $white;
   line-height: 1.8;
   color: $navyBlue;
 }
 
 .example_card-item-name {
-  width: calc(96% / 2);
+  width: calc(96% / 10 * 6);
   background-color: $white;
   color: $navyBlue;
 }

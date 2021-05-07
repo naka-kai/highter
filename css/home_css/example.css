@@ -392,15 +392,15 @@ ul {
   margin-top: 1.5rem;
 }
 
-.example_card-item-profession {
-  width: calc(96% / 2);
+.example_card-item-position {
+  width: calc(96% / 10 * 4);
   background-color: #FFFFFF;
   line-height: 1.8;
   color: #1B224C;
 }
 
 .example_card-item-name {
-  width: calc(96% / 2);
+  width: calc(96% / 10 * 6);
   background-color: #FFFFFF;
   color: #1B224C;
 }

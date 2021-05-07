@@ -28,7 +28,7 @@
     wp_head(); ?>
 </head>
 
-<body> <?php body_class(); ?>
+<body>
     <?php wp_body_open(); ?>
     <header class="header">
         <div class="header_logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo (2).svg" alt="Engress"></a></div>

@@ -4,8 +4,7 @@
     <div class="hero_bg-img">
       <div class="hero_text-box">
         <h1 class="hero_text-title">TOEFL対策は<br class="smallDone">Engress</h1>
-        <h5 class="hero_text-text">日本人へのTOEFL指導歴豊かな講師陣の<br class="smallNone">コーチング型TOEFLスクール</h5><a href=""
-          class="p circle-request-btn-text">
+        <h5 class="hero_text-text">日本人へのTOEFL指導歴豊かな講師陣の<br class="smallNone">コーチング型TOEFLスクール</h5><a href="" class="p circle-request-btn-text">
           <div class="circle-request-btn">資料請求 </div>
         </a>
         <p class="contact-link-text"><a href="">お問い合わせ</a></p>
@@ -25,8 +24,7 @@
       <div class="about_white-text-box-wrapper">
         <div class="about_white-text-box">
           <h2 class="about_white-text-title">Engressは<br>TOEFLに特化したスクールです</h2>
-          <h5 class="about_white-text-text">完全オーダーメイドで、<br class="smallDone">１人１人の悩みに合わせた<br class="smallDone">最適な指導で<br
-              class="smallNone">TOEFLの苦手分野を克服します。</h5>
+          <h5 class="about_white-text-text">完全オーダーメイドで、<br class="smallDone">１人１人の悩みに合わせた<br class="smallDone">最適な指導で<br class="smallNone">TOEFLの苦手分野を克服します。</h5>
         </div>
       </div>
     </div>
@@ -93,10 +91,9 @@
       <div class="example_card-box">
         <div class="example_card-list"><a href="" class="example_card-link">
             <p class="example_card-item-title">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p>
-            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model01.jpg"
-                alt=""></figure>
+            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model01.jpg" alt=""></figure>
             <div class="example_card-item-text-top">
-              <p class="example_card-item-profession">会社員</p>
+              <p class="example_card-item-position">会社員</p>
               <p class="example_card-item-name">T.Fujiyamaさん</p>
             </div>
             <!-- example_card-item-text-top -->
@@ -107,10 +104,9 @@
         <!-- example_card-list -->
         <div class="example_card-list"><a href="" class="example_card-link">
             <p class="example_card-item-title">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</p>
-            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model02.jpg"
-                alt=""></figure>
+            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model02.jpg" alt=""></figure>
             <div class="example_card-item-text-top">
-              <p class="example_card-item-profession">大学生</p>
+              <p class="example_card-item-position">大学生</p>
               <p class="example_card-item-name">Y.Takiyamaさん</p>
             </div>
             <!-- example_card-item-text-top -->
@@ -121,10 +117,9 @@
         <!-- example_card-list -->
         <div class="example_card-list"><a href="" class="example_card-link">
             <p class="example_card-item-title">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</p>
-            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model03.jpg"
-                alt=""></figure>
+            <figure class="example_card-item-img"><img src="<?php echo get_template_directory_uri(); ?>/img/model03.jpg" alt=""></figure>
             <div class="example_card-item-text-top">
-              <p class="example_card-item-profession">高校生</p>
+              <p class="example_card-item-position">高校生</p>
               <p class="example_card-item-name">M.Yamadaさん</p>
             </div>
             <!-- example_card-item-text-top -->
@@ -214,43 +209,63 @@
       <section class="blog">
         <h3 class="blog_title">ブログ</h3>
         <div class="blog_articles">
+          <?php query_posts('posts_per_page=2'); ?>
           <?php if (have_posts()) : ?>
-          <?php while (have_posts()) : the_post(); ?>
-          <a href="<?php the_permalink() ;?>">
-            <article class="blog_article">
-              <figure class="blog_article-img-box">
-                <?php if(has_post_thumbnail()): ?>
-                <?php the_post_thumbnail(); ?>
-                <?php else:?>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/sample02.svg" />
-                <?php endif; ?>
-                <small class="blog_category">カテゴリー</small>
-              </figure>
-              <div class="blog_article-text-box">
-                <p class="blog_article-title"><?php the_title(); ?>
-                </p>
-                <small class="blog_article-date">
-                  <?php the_date(); ?></small>
-                </small>
-              </div>
-            </article>
-          </a>
-          <?php endwhile; ?>
+            <?php while (have_posts()) : the_post(); ?>
+              <a href="<?php the_permalink(); ?>">
+                <article class="blog_article">
+                  <figure class="blog_article-img-box">
+                    <?php if (has_post_thumbnail()) : ?>
+                      <?php the_post_thumbnail(); ?>
+                    <?php else : ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/sample02.svg" />
+                    <?php endif; ?>
+                    <small class="blog_category">カテゴリー</small>
+                  </figure>
+                  <div class="blog_article-text-box">
+                    <p class="blog_article-title">
+
+                      <?php
+                      if (mb_strlen($post->post_title, 'UTF-8') > 50) {
+                        $title = mb_substr($post->post_title, 0, 50, 'UTF-8');
+                        echo $title . '...';
+                      } else {
+                        echo $post->post_title;
+                      }
+                      ?>
+                    </p>
+                    <small class="blog_article-date">
+                      <?php the_date(); ?></small>
+                    </small>
+                  </div>
+                </article>
+              </a>
+            <?php endwhile; ?>
           <?php endif; ?>
         </div>
       </section>
       <section class="news">
-        <?php if(have_posts()): ?>
-        <?php while(have_posts()): the_post(); ?>
-        <h3 class="news_title"><?php the_title(); ?></h3>
-        <div class="news_articles">
-          <article class="news_article">
-            <small class="news_article-date"><?php the_date(); ?></small>
-            <p class="news_article-title"><?php the_content(); ?></p>
-            <?php endwhile;?>
-            <?php endif; ?>
-          </article>
-        </div>
+        <?php
+        $args = array(
+          'post_type' => 'news',
+          'posts_per_page' => '3'
+        );
+        $the_query = new WP_query($args);
+        if ($the_query->have_posts()) :
+        ?>
+          <h3 class="news_title">お知らせ</h3>
+          <div class="news_articles">
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+              <a href="<?php the_permalink(); ?>">
+                <article class="news_article">
+                  <small class="news_article-date"><?php the_date(); ?></small>
+                  <p class="news_article-title"><?php the_title(); ?></p>
+                </article>
+              </a>
+            <?php endwhile; ?>
+          </div>
+        <?php wp_reset_postdata();
+        endif; ?>
       </section>
     </div>
   </div>
@@ -258,8 +273,7 @@
     <div class="contact_bg-img">
       <div class="contact_text-box">
         <h3 class="contact_text-title">まずは無料で資料請求から</h3>
-        <div class="circle-request-btn contact_circle-request-btn"><a href=""
-            class="p circle-request-btn-text contact_circle-request-btn-text">資料請求 </a></div>
+        <div class="circle-request-btn contact_circle-request-btn"><a href="" class="p circle-request-btn-text contact_circle-request-btn-text">資料請求 </a></div>
         <p class="contact-link-text contact_contact-link-text"><a href="">お問い合わせ</a></p>
       </div>
     </div>

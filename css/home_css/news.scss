@@ -21,9 +21,10 @@
 }
 
 .news_article-title {
-  // padding: 2rem 0 3rem;
+  padding: 2rem 0 3rem;
+  text-decoration: underline;
 
-  // @include spc {
-  //   padding: vh(670, 15) 0 vh(670, 43);
-  // }
+  @include spc {
+    padding: vh(670, 15) 0 vh(670, 43);
+  }
 }
