@@ -7,15 +7,13 @@
 <section class="breadcrumb">
   <div class="breadcrumb-list-box">
     <div class="container">
-      <ul class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
-        <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a class="item" href="https://kaiblo.com/portfolio/heighter/"><small>ホーム</small></a>
-          <meta itemprop="position" content="1" />
-        </li>
-        <li class="breadcrumb-item">
-          <small>料金体系</small>
-        </li>
-      </ul>
+      <div class="breadcrumb-list">
+        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+          <?php if (function_exists('bcn_display')) {
+            bcn_display();
+          } ?>
+        </div>
+      </div>
     </div>
   </div>
 

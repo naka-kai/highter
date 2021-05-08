@@ -332,19 +332,16 @@ ul {
   padding: 2.5rem 0;
 }
 
-.breadcrumb-item {
-  display: inline;
-}
-
-.breadcrumb-item::after {
-  /* >を表示*/
-  content: '>';
-  padding: 0 0.2em;
-}
-
-.breadcrumb-item a {
+.breadcrumbs {
   color: #1B224C;
-  border-bottom: 1px solid #1B224C;
+  font-size: 1.2rem;
+  font-weight: 200;
+  list-style: 1.7;
+}
+
+.breadcrumbs a {
+  color: #1B224C;
+  text-decoration: underline;
 }
 
 .breadcrumb-item:last-child::after {

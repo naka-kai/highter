@@ -14,18 +14,16 @@
   padding: 2.5rem 0;
 }
 
-.breadcrumb-item {
-  display: inline;
+.breadcrumbs {
 
-  &::after {
-    /* >を表示*/
-    content: '>';
-    padding: 0 0.2em;
-  }
+  color: $navyBlue;
+  font-size: 1.2rem;
+  font-weight: 200;
+  list-style: 1.7;
 
   a {
     color: $navyBlue;
-    border-bottom: 1px solid $navyBlue;
+    text-decoration: underline;
   }
 }
 

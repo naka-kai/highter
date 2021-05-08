@@ -181,6 +181,11 @@ body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
+.is-fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: bold;
@@ -315,7 +320,7 @@ ul {
 }
 
 .mainvisual {
-  background-image: url(/img/plan.jpg);
+  background-image: url("../../img/plan.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
