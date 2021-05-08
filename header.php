@@ -22,10 +22,13 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/share_css/footer.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
+    <!-- jquery -->
+    <!-- javaScript -->
     <?php
     wp_enqueue_script('jquery');
     wp_enqueue_script('engress-main-script', get_template_directory_uri() . '/js/script.js');
-    wp_head(); ?>
+    ?>
+    <?php wp_head(); ?>
 </head>
 
 <body>

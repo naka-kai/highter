@@ -3,5 +3,5 @@
 @import '../share_css/style.scss';
 
 .mainvisual {
-  background-image: url(../../<?php echo get_template_directory_uri(); ?>/img/cta.svg);
+  background-image: url(/img/cta.svg);
 }

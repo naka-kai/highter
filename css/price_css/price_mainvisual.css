@@ -181,6 +181,11 @@ body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
+.is-fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: bold;
@@ -314,57 +319,7 @@ ul {
   }
 }
 
-.price_img-box {
-  background-image: url(../../<?php echo get_template_directory_uri(); ?>/img/price.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin: 3rem 0 3rem;
-  padding: 3rem 0;
+.mainvisual {
+  background-image: url("../../img/plan.jpg");
 }
-
-@media screen and (min-width: 1280px) {
-  .price_img-box {
-    padding: 6rem 0 5.3rem;
-    margin: 4.3rem 0 4rem;
-  }
-}
-
-.price_img-box-title {
-  color: #FFFFFF;
-}
-
-.price_img-box-link {
-  margin-top: 2rem;
-}
-
-@media screen and (min-width: 1280px) {
-  .price_img-box-link {
-    margin-top: 2.7rem;
-  }
-}
-
-.price_img-box-text {
-  font-weight: bold;
-}
-
-.price_img-box-text a {
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
-  line-height: 1.7;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-@media screen and (min-width: 1280px) {
-  .price_img-box-text a {
-    font-size: 1.6rem;
-    padding: 1.5rem 4.5rem;
-  }
-}
-/*# sourceMappingURL=fee.css.map */
+/*# sourceMappingURL=price_mainvisual.css.map */

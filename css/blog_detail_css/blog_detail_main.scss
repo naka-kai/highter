@@ -39,6 +39,47 @@
 }
 
 .blog_article-snsDate-wrapper {
+  display: flex;
+
+  a {
+    margin-right: .4rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.sns-btn {
+  border-radius: 3px;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.7;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.blog_detail_main-like {
+  background-color: #305097;
+  width: 6.9rem;
+
+}
+
+.blog_detail_main-share {
+  background-color: #305097;
+  width: 4.4rem;
+}
+
+.blog_detail_main-twitter {
+  background-color: #00ACED;
+  width: 6.9rem;
+}
+
+.blog_article-snsDate-wrapper {
   margin-top: 2rem;
   display: flex;
 }
@@ -111,7 +152,7 @@
 
   &::before {
     content: '';
-    background-image: url(../../<?php echo get_template_directory_uri(); ?>/img/quote.svg);
+    background-image: url("img/quote.svg");
     width: 2rem;
     height: 2rem;
     background-size: cover;
