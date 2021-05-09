@@ -1,5 +1,10 @@
 <?php get_header('single'); ?>
 
+<?php
+$share_url = get_permalink();
+$share_title = get_the_title();
+?>
+
 <section class="breadcrumb">
   <div class="breadcrumb-list-box">
     <div class="container">
@@ -14,52 +19,21 @@
   </div>
 </section>
 
-
 <section class="blog_detail_main">
   <div class="container blog_detail_main-container">
     <div class="blog_detail_main-left">
       <article class="blog_detail_main-article">
-        <small class="blog_article-category">カテゴリ１</small>
-        <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-        <div class="blog_article-snsDate-wrapper">
-          <a href="#" rel="nofollow" target="_blank">
-            <div class="blog_detail_main-like sns-btn">Like！</div>
-          </a>
-          <a href="#" rel="nofollow" target="_blank">
-            <div class="blog_detail_main-share sns-btn">Share</div>
-          </a>
-          <a href="#" rel="nofollow" target="_blank">
-            <div class="blog_detail_main-twitter sns-btn">ツイート</div>
-          </a>
-        </div>
+        <small class="blog_article-category"><?php the_category(); ?></small>
+        <h4 class="blog_article-title"><?php the_title(); ?></h4>
         <div class="blog_article-date-wrapper">
-          <p class="blog_article-date">2020-01-01</p>
+          <p class="blog_article-date"><?php echo get_the_date(); ?></p>
         </div>
-        <figure class="blog_article-main-img"><img src="<?php echo get_template_directory_uri(); ?>/img/sample01.svg" alt=""></figure>
-        <h4 class="blog_article-main-title">見出しh2</h4>
-        <p class="blog_article-main-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
-        <h5 class="blog_article-sub-title">見出しh3</h5>
-        <p class="blog_article-sub-text">本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <blockquote class="blog_article-quote">
-          <div class="blog_article-quote-text-box">
-            <p class="blog_article-quote-text">引用文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </blockquote>
-        <figure class="blog_article-sub-img"><img src="<?php echo get_template_directory_uri(); ?>/img/sample4.svg" alt=""></figure>
-        <ul class="blog_article-list-wrapper">
-          <li class="blog_article-list">
-            <p class="blog_article-list-text">リストリストリストリストリスト</p>
-          </li>
-          <li class="blog_article-list">
-            <p class="blog_article-list-text">リストリストリストリストリストリストリストリストリスト</p>
-          </li>
-          <li class="blog_article-list">
-            <p class="blog_article-list-text">リストリストリストリストリストリストリストリストリストリストリストリストリストリスト</p>
-          </li>
-        </ul>
-        <h5 class="blog_article-link"><a href="">テキストリンクテキストリンク</a></h5>
+        <div class="content-wrapper">
+          <?php the_content(); ?>
+        </div>
       </article>
 
+      
       <div class="blog_recommend">
         <h4 class="blog_recommend-title">おすすめの記事</h4>
         <article class="blog_recommend-article">

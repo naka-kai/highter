@@ -13,4 +13,6 @@ $args = [
   'posts_per_page' => 10
 ];
 
+//スクロールヒント
 add_action('scrollHint-script', 'add_files');
+
