@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function ($) {
 
   //ハンバーガーメニュー開閉
   $('.ham').on('click', function () {
