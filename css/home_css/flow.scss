@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import '../share_css/style.scss';
+@import '../share_css/reset.scss';
 
 
 .flow {
@@ -40,8 +40,7 @@
   line-height: 1.8;
   font-size: 1.6rem;
 
-  @include spc {
-  }
+  @include spc {}
 }
 
 .flow_list-item-text-box {

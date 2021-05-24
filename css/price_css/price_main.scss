@@ -1,6 +1,28 @@
 @charset "utf-8";
 
-@import '../share_css/style.scss';
+@import '../share_css/reset.scss';
+
+.breadcrumbs-wrapper {
+  background-color: $moreThinGray;
+}
+
+.breadcrumbs {
+  height: 5rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-right: 1rem;
+    text-decoration: underline;
+    color: $navyBlue;
+  }
+
+  .current-item {
+    margin-left: 1rem;
+  }
+}
 
 .price_main {
   padding-bottom: 6.2rem;
@@ -98,8 +120,7 @@
     padding-right: 0;
   }
 
-  @include ipad {
-  }
+  @include ipad {}
 }
 
 .price_card {

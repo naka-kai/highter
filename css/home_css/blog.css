@@ -181,6 +181,11 @@ body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
+.is-fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: bold;
@@ -327,7 +332,7 @@ ul {
 }
 
 @media screen and (min-width: 1280px) {
-  .blog {
+  .section-blog {
     width: 33.59375vw;
   }
 }
@@ -388,5 +393,8 @@ ul {
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-weight: bold;
+  width: 26rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=blog.css.map */

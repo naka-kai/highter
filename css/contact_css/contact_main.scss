@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import '../share_css/style.scss';
+@import '../share_css/reset.scss';
 
 .db {
   display: block;
@@ -14,7 +14,7 @@
   }
 }
 
-.contact_form {
+.contact_main {
   margin-top: 6rem;
 }
 
@@ -28,7 +28,7 @@ input::placeholder {
 
 .companyname-area {
   width: calc(100% - 4.8rem);
-  padding: 2.2rem;
+  padding: 2rem;
   margin-top: 1.2rem;
 
   @include ipad {
@@ -42,7 +42,7 @@ input::placeholder {
 
 .yourname-area {
   width: calc(100% - 4.8rem);
-  padding: 2.2rem;
+  padding: 2rem;
   margin-top: 1.2rem;
 
   @include ipad {
@@ -56,11 +56,17 @@ input::placeholder {
 
 .mail-area {
   width: calc(100% - 4.8rem);
-  padding: 2.2rem;
+  padding: 2rem;
   margin-top: 1.2rem;
 
   @include ipad {
     width: 100%;
+  }
+}
+
+.brnone {
+  br {
+    display: none;
   }
 }
 
@@ -70,7 +76,7 @@ input::placeholder {
 
 .num-area {
   width: calc(100% - 4.8rem);
-  padding: 2.2rem;
+  padding: 2rem;
   margin-top: 1.2rem;
 
   @include ipad {
@@ -80,6 +86,27 @@ input::placeholder {
 
 .contact_form-type-text {
   margin-top: 2rem;
+}
+
+.contact_form-type-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.mwform-radio-field:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.mw_wp_form .horizontal-item.horizontal-item {
+  margin-left: 0;
+}
+
+.mwform-radio-field-text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-left: 2rem;
+  vertical-align: middle;
 }
 
 input[type=radio] {
@@ -133,7 +160,7 @@ textarea::placeholder {
 
 .content-area {
   width: calc(100% - 4.6rem);
-  padding: 2.2rem;
+  padding: 2rem;
   margin-top: 1.2rem;
 
   @include ipad {
@@ -151,7 +178,7 @@ textarea::placeholder {
   }
 }
 
-.contact_form-privacy {
+.mwform-checkbox-field {
   text-align: center;
   margin-top: 3.1rem;
   display: flex;

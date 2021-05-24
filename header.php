@@ -8,25 +8,51 @@
   <meta name="robots" content="noindex" />
   <title>Engress</title>
   <!-- favicon -->
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_uri(); ?>/../img/favicon.ico">
+
+  <!-- meta情報 -->
+  <!-- Primary Meta Tags -->
+  <title>Engress</title>
+  <meta name="title" content="Engress">
+  <meta name="description" content="日本人へのTOEFL指導歴豊かな講師陣の
+コーチング型TOEFLスクール">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://engress.kaiblo.com/">
+  <meta property="og:title" content="Engress">
+  <meta property="og:description" content="日本人へのTOEFL指導歴豊かな講師陣の
+コーチング型TOEFLスクール">
+  <meta property="og:image" content="/img/fv.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://engress.kaiblo.com/">
+  <meta property="twitter:title" content="Engress">
+  <meta property="twitter:description" content="日本人へのTOEFL指導歴豊かな講師陣の
+コーチング型TOEFLスクール">
+  <meta property="twitter:image" content="/img/fv.jpg">
+
+  <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <header class="header">
     <div class="header_logo"><a href=""><img src="<?php echo get_stylesheet_uri(); ?>/../img/logo (2).svg" alt="Engress"></a></div>
     <nav class="header_nav" id="header_nav">
       <nav class="header-sp-nav">
         <ul class="header-sp-menu">
-          <a href="#" class="header-sp-menu-link">
+          <a href="<?php echo home_url('/'); ?>" class="header-sp-menu-link">
             <li class="header-sp-menu-list">ホーム</li>
           </a>
-          <a href="#" class="header-sp-menu-link">
+          <a href="<?php echo get_permalink('news'); ?>" class="header-sp-menu-link">
             <li class="header-sp-menu-list">お知らせ</li>
           </a>
-          <a href="#" class="header-sp-menu-link">
+          <a href="<?php echo get_permalink('home'); ?>" class="header-sp-menu-link">
             <li class="header-sp-menu-list">ブログ</li>
           </a>
-          <a href="#" class="header-sp-menu-link">
+          <a href="<?php the_permalink('price'); ?>" class="header-sp-menu-link">
             <li class="header-sp-menu-list">コース・料金</li>
           </a>
         </ul>
@@ -62,14 +88,5 @@
         </a>
       </div>
     </nav>
-    <?php wp_head(); ?>
+
   </header>
-  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-    <?php
-    if(!is_front_page()) {
-      if (function_exists('bcn_display')) {
-        bcn_display();
-      }
-    }
-    ?>
-  </div>

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <section class="hero">
   <div class="hero_bg-img">
     <div class="hero_text-box">
@@ -86,7 +87,7 @@
     <h2 class="example_title">TOEFL成功事例</h2>
     <div class="example_card-box">
       <div class="example_card-list"><a href="" class="example_card-link">
-          <p class="example_card-item-title">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p>
+          <p class="example_card-item-title"><?php the_field('title'); ?></p>
           <figure class="example_card-item-img"><img src="<?php echo get_stylesheet_uri(); ?>/../img/model01.jpg" alt=""></figure>
           <div class="example_card-item-text-top">
             <p class="example_card-item-profession">会社員</p>
@@ -200,53 +201,7 @@
     </div>
   </div>
 </section>
-<div class="blog-news">
-  <div class="container blog-news-container">
-    <section class="blog">
-      <h3 class="blog_title">ブログ</h3>
-      <div class="blog_articles">
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="<?php echo get_stylesheet_uri(); ?>/../img/sample01.svg" alt="">
-            <small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-title">Engress説明会in大阪の模様をお伝えします</p><small class="blog_article-date">2020-12-27</small>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="<?php echo get_stylesheet_uri(); ?>/../img/sample02.svg" alt=""><small class="blog_category">カテゴリー</small></figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-title">Engressもくもく会でみんなでTOEFL学習をしませんか？</p><small class="blog_article-date">2020-12-01</small>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="<?php echo get_stylesheet_uri(); ?>/../img/sample03.svg" alt=""><small class="blog_category">カテゴリー</small></figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-title">TOEFL学習にはコーチング学習が最強である話</p><small class="blog_article-date">2020-11–20</small>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="news">
-      <h3 class="news_title">お知らせ</h3>
-      <div class="news_articles">
-        <article class="news_article"><small class="news_article-date">2020-12-01</small>
-          <p class="news_article-title">2021年のスケジュールについて</p>
-        </article>
-      </div>
-      <div class="news_articles">
-        <article class="news_article"><small class="news_article-date">2019-11-02</small>
-          <p class="news_article-title">11月休校日のお知らせ</p>
-        </article>
-      </div>
-      <div class="news_articles">
-        <article class="news_article"><small class="news_article-date">2020-10-01</small>
-          <p class="news_article-title">10月休校日のお知らせ</p>
-        </article>
-      </div>
-    </section>
-  </div>
-</div>
+<?php get_sidebar(); ?>
 <section class="contact">
   <div class="contact_bg-img">
     <div class="contact_text-box">
