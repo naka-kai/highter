@@ -319,6 +319,32 @@ ul {
   }
 }
 
+.breadcrumbs-wrapper {
+  background-color: #F8F8F8;
+}
+
+.breadcrumbs {
+  height: 5rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumbs a {
+  margin-right: 1rem;
+  text-decoration: underline;
+  color: #1B224C;
+}
+
+.breadcrumbs .current-item {
+  margin-left: 1rem;
+}
+
 .db {
   display: block;
 }
@@ -442,6 +468,11 @@ input::placeholder {
 
 .mw_wp_form .horizontal-item.horizontal-item {
   margin-left: 0;
+}
+
+.mw_wp_form .error {
+  font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
 .mwform-radio-field-text {

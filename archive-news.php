@@ -22,7 +22,7 @@
 
         <article class="news_article">
           <p class="news_article-date"><?php the_time('Y年n月j日'); ?></p>
-          <p class="news_article-title"><a href=""><?php the_title(); ?></a></p>
+          <p class="news_article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
         </article>
 
     <?php endwhile;
@@ -35,7 +35,7 @@
   <div class="contact_bg-img">
     <div class="contact_text-box">
       <h3 class="contact_text-title">まずは無料で資料請求から</h3>
-      <div class="circle-request-btn contact_circle-request-btn"><a href="" class="p circle-request-btn-text contact_circle-request-btn-text">資料請求 </a></div>
+      <div class="circle-request-btn contact_circle-request-btn"><a href="" class="p circle-request-btn-text contact_circle-request-btn-text">資料請求</a></div>
       <p class="contact-link-text contact_contact-link-text"><a href="">お問い合わせ</a></p>
     </div>
   </div>

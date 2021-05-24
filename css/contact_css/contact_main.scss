@@ -2,6 +2,28 @@
 
 @import '../share_css/reset.scss';
 
+.breadcrumbs-wrapper {
+  background-color: $moreThinGray;
+}
+
+.breadcrumbs {
+  height: 5rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-right: 1rem;
+    text-decoration: underline;
+    color: $navyBlue;
+  }
+
+  .current-item {
+    margin-left: 1rem;
+  }
+}
+
 .db {
   display: block;
 }
@@ -100,6 +122,11 @@ input::placeholder {
 
 .mw_wp_form .horizontal-item.horizontal-item {
   margin-left: 0;
+}
+
+.mw_wp_form .error {
+  font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
 .mwform-radio-field-text {

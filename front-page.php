@@ -87,7 +87,7 @@
     <h2 class="example_title">TOEFL成功事例</h2>
     <div class="example_card-box">
       <div class="example_card-list"><a href="" class="example_card-link">
-          <p class="example_card-item-title"><?php the_field('title'); ?></p>
+          <p class="example_card-item-title"><?php the_field('title', 2166); ?></p>
           <figure class="example_card-item-img"><img src="<?php echo get_stylesheet_uri(); ?>/../img/model01.jpg" alt=""></figure>
           <div class="example_card-item-text-top">
             <p class="example_card-item-profession">会社員</p>
