@@ -32,7 +32,6 @@
   <meta property="twitter:description" content="日本人へのTOEFL指導歴豊かな講師陣の
 コーチング型TOEFLスクール">
   <meta property="twitter:image" content="/img/fv.jpg">
-
   <?php wp_head(); ?>
 </head>
 

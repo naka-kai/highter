@@ -1,7 +1,53 @@
 @charset "UTF-8";
+@import './css/share_css/reset.scss';
+
 /*
 Theme Name: Engress
 */
+
+@function vw($width, $px) {
+  @return $px / $width * 100vw;
+}
+
+@function vh($height, $px) {
+  @return $px / $height * 100vh;
+}
+
+$bpc: 1600px; //PC大画面
+$spc: 1280px; // PC通常
+$ipad: 768px; // iPad
+$sp: 375px; // スマホ
+
+@mixin sp {
+  @media screen and (min-width: $sp) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media screen and (min-width: $ipad) {
+    @content;
+  }
+}
+
+@mixin spc {
+  @media screen and (min-width: $spc) {
+    @content;
+  }
+}
+
+@mixin bpc {
+  @media screen and (min-width: $bpc) {
+    @content;
+  }
+}
+
+$navyBlue: #1B224C;
+$yellowOrange: #F5A623;
+$thinGray: #D5D5D5;
+$moreThinGray: #F8F8F8;
+$white: #FFFFFF;
+
 html {
   font-size: 62.5%;
   /* -> 10px; */
@@ -20,11 +66,9 @@ h1 {
   font-size: 4rem;
   font-weight: bold;
   line-height: 1.3;
-  color: #1B224C;
-}
+  color: $navyBlue;
 
-@media screen and (min-width: 1280px) {
-  h1 {
+  @include spc {
     font-size: 4.8rem;
     line-height: 1.4;
   }
@@ -34,11 +78,9 @@ h2 {
   font-weight: bold;
   line-height: 1.4;
   font-size: 2.1rem;
-  color: #1B224C;
-}
+  color: $navyBlue;
 
-@media screen and (min-width: 1280px) {
-  h2 {
+  @include spc {
     font-size: 3.6rem;
   }
 }
@@ -47,11 +89,9 @@ h3 {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.7;
-  color: #1B224C;
-}
+  color: $navyBlue;
 
-@media screen and (min-width: 1280px) {
-  h3 {
+  @include spc {
     font-size: 3.2rem;
   }
 }
@@ -60,11 +100,9 @@ h4 {
   font-weight: bold;
   line-height: 1.5;
   font-size: 2.6rem;
-  color: #1B224C;
-}
+  color: $navyBlue;
 
-@media screen and (min-width: 1280px) {
-  h4 {
+  @include spc {
     font-size: 2.4rem;
   }
 }
@@ -73,11 +111,9 @@ h5 {
   font-weight: bold;
   line-height: 1.5;
   font-size: 1.8rem;
-  color: #1B224C;
-}
+  color: $navyBlue;
 
-@media screen and (min-width: 1280px) {
-  h5 {
+  @include spc {
     font-size: 1.6rem;
   }
 }
@@ -87,12 +123,10 @@ p,
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 1.7;
-  color: #1B224C;
-}
+  color: $navyBlue;
 
-@media screen and (min-width: 1280px) {
-  p,
-  .p {
+  @include spc {
+
     line-height: 1.5;
     font-size: 1.5rem;
   }
@@ -102,15 +136,15 @@ small {
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.7;
-  color: #1B224C;
+  color: $navyBlue;
 }
 
 a {
   text-decoration: none;
-}
 
-a:hover {
-  opacity: .8;
+  &:hover {
+    opacity: .8;
+  }
 }
 
 ul {
@@ -119,20 +153,16 @@ ul {
 
 .smallDone {
   display: block;
-}
 
-@media screen and (min-width: 1280px) {
-  .smallDone {
+  @include spc {
     display: none;
   }
 }
 
 .smallNone {
   display: none;
-}
 
-@media screen and (min-width: 1280px) {
-  .smallNone {
+  @include spc {
     display: block;
   }
 }
@@ -141,15 +171,8 @@ ul {
   margin: 0 auto;
   max-width: 1600px;
   width: 90%;
-}
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 70.3125vw;
+  @include ipad {
+    width: vw(1280, 900);
   }
 }
-
-.mainvisual {
-  background-image: url(../../img/news.jpg);
-}
-/*# sourceMappingURL=news_mainvisual.css.map */

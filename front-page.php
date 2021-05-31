@@ -86,45 +86,43 @@
   <div class="container example_container">
     <h2 class="example_title">TOEFL成功事例</h2>
     <div class="example_card-box">
-      <div class="example_card-list"><a href="" class="example_card-link">
-          <p class="example_card-item-title"><?php the_field('title', 2166); ?></p>
-          <figure class="example_card-item-img"><img src="<?php echo get_stylesheet_uri(); ?>/../img/model01.jpg" alt=""></figure>
-          <div class="example_card-item-text-top">
-            <p class="example_card-item-profession">会社員</p>
-            <p class="example_card-item-name">T.Fujiyamaさん</p>
+
+      <?php
+      $args = array(
+        'post_type' => 'example',
+        'post_status' => 'publish',
+        'posts_per_page' => 3
+      );
+      $the_query = new WP_Query($args);
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) :
+          $the_query->the_post();
+      ?>
+
+          <div class="example_card-list"><a href="" class="example_card-link">
+              <p class="example_card-item-title"><?php the_field('title'); ?></p>
+              <figure class="example_card-item-img">
+                <?php if (get_field('image')) : ?>
+                  <img src="<?php the_field('image'); ?>" alt="">
+                <?php endif; ?>
+              </figure>
+              <div class="example_card-item-text-top">
+                <p class="example_card-item-profession"><?php the_field('profession'); ?></p>
+                <p class="example_card-item-name"><?php the_field('name'); ?></p>
+              </div>
+              <!-- example_card-item-text-top -->
+              <p class="example_card-item-period"><?php the_field('period'); ?></p>
+            </a>
+            <!-- example_card-link -->
           </div>
-          <!-- example_card-item-text-top -->
-          <p class="example_card-item-period">3ヶ月でTOEFL80→108点</p>
-        </a>
-        <!-- example_card-link -->
-      </div>
-      <!-- example_card-list -->
-      <div class="example_card-list"><a href="" class="example_card-link">
-          <p class="example_card-item-title">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</p>
-          <figure class="example_card-item-img"><img src="<?php echo get_stylesheet_uri(); ?>/../img/model02.jpg" alt=""></figure>
-          <div class="example_card-item-text-top">
-            <p class="example_card-item-profession">大学生</p>
-            <p class="example_card-item-name">Y.Takiyamaさん</p>
-          </div>
-          <!-- example_card-item-text-top -->
-          <p class="example_card-item-period">6ヶ月でTOEFL40→100点</p>
-        </a>
-        <!-- example_card-link -->
-      </div>
-      <!-- example_card-list -->
-      <div class="example_card-list"><a href="" class="example_card-link">
-          <p class="example_card-item-title">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</p>
-          <figure class="example_card-item-img"><img src="<?php echo get_stylesheet_uri(); ?>/../img/model03.jpg" alt=""></figure>
-          <div class="example_card-item-text-top">
-            <p class="example_card-item-profession">高校生</p>
-            <p class="example_card-item-name">M.Yamadaさん</p>
-          </div>
-          <!-- example_card-item-text-top -->
-          <p class="example_card-item-period">5ヶ月でTOEFL68→109点</p>
-        </a>
-        <!-- example_card-link -->
-      </div>
-      <!-- example_card-list -->
+          <!-- example_card-list -->
+
+      <?php
+        endwhile;
+        wp_reset_postdata();
+      endif;
+      ?>
+
     </div>
     <!-- example_card-box -->
   </div>
@@ -201,7 +199,84 @@
     </div>
   </div>
 </section>
-<?php get_sidebar(); ?>
+<div class="blog-news">
+  <div class="container blog-news-container">
+    <section class="section-blog">
+      <h3 class="blog_title">ブログ</h3>
+      <div class="blog_articles">
+        <?php
+        $args = array(
+          'posts_per_page' => 3 // 表示件数の指定
+        );
+        $posts = get_posts($args);
+        foreach ($posts as $post) : // ループの開始
+          setup_postdata($post); // 記事データの取得
+        ?>
+          <a href="<?php the_permalink(); ?>">
+            <article class="blog_article">
+              <figure class="blog_article-img-box">
+                <?php if (has_post_thumbnail()) :
+                  the_post_thumbnail('thumbnail');
+                else :
+                ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/../img/noimage.png" alt="">
+                <?php endif; ?>
+          </a>
+          <a href="<?php the_permalink(); ?>">
+            <small class="blog_category">
+              <?php
+              $categories = get_the_category();
+              if ($categories) {
+                echo $categories[0]->name;
+              }
+              ?>
+            </small>
+            </figure>
+            <div class="blog_article-text-box">
+              <p class="blog_article-title text"><?php the_title(); ?></p><small class="blog_article-date"><?php the_time('Y-m-d'); ?></small>
+            </div>
+            </article>
+          </a>
+
+        <?php
+        endforeach; // ループの終了
+        wp_reset_postdata(); // 直前のクエリを復元する
+        ?>
+
+      </div>
+    </section>
+    <section class="news">
+      <h3 class="news_title">お知らせ</h3>
+      <div class="news_articles">
+
+        <?php
+        $args = array(
+          'post_type' => 'news',
+          'post_status' => 'publish',
+          'posts_per_page' => 3
+        );
+        $the_query = new WP_Query($args);
+        if ($the_query->have_posts()) :
+          while ($the_query->have_posts()) :
+            $the_query->the_post();
+        ?>
+            <a href="<?php the_permalink(); ?>">
+              <article class="news_article"><small class="news_article-date"><?php the_time('Y-m-d'); ?></small>
+                <p class="news_article-title"><?php the_title(); ?></p>
+              </article>
+            </a>
+        <?php
+          endwhile;
+          wp_reset_postdata(); // 直前のクエリを復元する
+        endif;
+        ?>
+      </div>
+
+
+    </section>
+  </div>
+</div>
+
 <section class="contact">
   <div class="contact_bg-img">
     <div class="contact_text-box">

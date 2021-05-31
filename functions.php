@@ -14,10 +14,10 @@ function add_css_js()
 {
 
   //cssの読み込み
+  // //全てのページにreset.cssを読み込み
+  // wp_enqueue_style('resetcss', get_template_directory_uri() . '/css/share_css/reset.css');
   //全てのページにstyle.cssを読み込み
   wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
-  //全てのページにreset.cssを読み込み
-  wp_enqueue_style('resetcss', get_template_directory_uri() . '/css/share_css/reset.css');
   //全てのページにheader.cssを読み込み
   wp_enqueue_style('headercss', get_template_directory_uri() . '/css/share_css/header.css');
   //全てのページにfooter.cssを読み込み
@@ -106,7 +106,11 @@ function add_css_js()
   //page-priceにscrollHint.jsを読み込み
   if (is_page('price')) {
     wp_enqueue_script('scrollHintjs', 'https://unpkg.com/scroll-hint@1.1.2/js/scroll-hint.js');
+    wp_enqueue_script('myscrollHintjs', get_template_directory_uri() . '/js/scrollHint.js');
   }
 }
 //add_css_jsをフロントで呼び出す
 add_action('wp_enqueue_scripts', 'add_css_js');
+
+//アイキャッチ画像
+add_theme_support('post-thumbnails');

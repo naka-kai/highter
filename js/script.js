@@ -40,11 +40,20 @@ jQuery(function ($) {
   $(function () {
     $(".ham").click(function () {  // トリガーをクリックした時の条件分岐
       if ($(".header-sp-nav").hasClass("open")) {  // ナビを閉じるときの処理
-        $("html").addClass("is-fixed");  // 背景固定解除！
+        $("html").addClass("is-fixed");  // 背景固定解除
       } else {                              // ナビを開くときの処理
-        $("html").removeClass("is-fixed");     // 背景固定！
+        $("html").removeClass("is-fixed");     // 背景固定
       }
     });
   });
+
+  //長い文章では後に「...」
+  // $(".abbr").each(function() {
+  //   var txt = $(this).text();
+  //   if(txt.length > 40) {
+  //     txt = txt.substr(0, 40);
+  //     $(this).text(txt + "...");
+  //   }
+  // });
 
 });

@@ -18,96 +18,20 @@
     <div class="container blog_container">
       <div class="articles">
         <h3 class="blog_title">記事一覧</h3>
+
+        <?php if(have_posts()): while(have_posts()): the_post(); ?>
+
         <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample01.svg" alt=""><small class="blog_category">カテゴリー</small>
+          <figure class="blog_article-img-box"><img src="<?php echo get_stylesheet_uri() ?>/img/sample01.svg" alt=""><small class="blog_category"><?php the_category(); ?></small>
           </figure>
           <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="blog_article-date"><?php the_time('Y-m-d'); ?></p>
+            <h4 class="blog_article-title"><?php the_title(); ?></h4>
+            <p class="blog_article-text"><?php the_excerpt(); ?></p>
           </div>
         </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample02.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample03.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample02.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample03.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample02.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample03.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample02.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample03.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
-        <article class="blog_article">
-          <figure class="blog_article-img-box"><img src="img/sample02.svg" alt=""><small class="blog_category">カテゴリー</small>
-          </figure>
-          <div class="blog_article-text-box">
-            <p class="blog_article-date">2020-12-01</p>
-            <h4 class="blog_article-title">ブログタイトルテキストテキストテキストテキスト</h4>
-            <p class="blog_article-text">記事の冒頭文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
-        </article>
+
+        <?php endwhile; endif; ?>
       </div>
     </div>
   </section>

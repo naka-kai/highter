@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-@import '../share_css/reset.scss';
+// @import '../share_css/reset.scss';
+@import '../../style.scss';
 
 .blog-news {
   padding: vh(670, 90) 0 vh(670, 119);
@@ -23,6 +24,10 @@
 .blog_article {
   display: flex;
   padding-top: vh(670, 30);
+
+  a {
+    display: block;
+  }
 }
 
 .blog_article-img-box {
@@ -55,16 +60,33 @@
   padding: .4rem .7rem;
 }
 
+.blog_category a {
+  color: $white;
+}
+
 .blog_article-text-box {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 2rem;
 }
 
 .blog_article-title {
   flex-grow: 1;
   font-weight: bold;
-  width: 26rem;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  /*IE対策*/
+  line-height: 1.5em;
+  max-height: 4.5em;
 }

@@ -23,9 +23,9 @@
           <p class="blog_article-date"><?php the_time('Y-m-d'); ?></p>
         </div>
         <figure class="blog_article-main-img"><img src="img/sample01.svg" alt=""></figure>
-        <h4 class="blog_article-main-title">見出しh2</h4>
+        <h2 class="blog_article-main-title">見出しh2</h2>
         <p class="blog_article-main-text">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</p>
-        <h5 class="blog_article-sub-title">見出しh3</h5>
+        <h3 class="blog_article-sub-title">見出しh3</h3>
         <p class="blog_article-sub-text">本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         <blockquote class="blog_article-quote">
           <div class="blog_article-quote-text-box">
